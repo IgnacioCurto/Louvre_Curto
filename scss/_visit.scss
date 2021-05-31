@@ -1,0 +1,81 @@
+@import 'color';
+@import 'font';
+
+//=======================================VISITA=======================================//
+
+.expo{
+    color: $color-white;
+    margin-left:20px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 20px
+}
+//-------Exhibicion-------//
+.exhibition {
+    margin-left: 24%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 48%;
+    .exhibition__img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .exhibition__overlay {
+        font-family: $base-font-family;
+        border-radius: 0%;
+        position: absolute;
+        top: 50;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba(30, 33, 45, 0.849);
+        .exhibition:hover .exhibition__overlay {
+            opacity: 1;
+        }
+        .exhibition__overlay .exhibition__overlay--title {
+            color: $color-lightBrown;
+            font-size: 60px;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .exhibition__overlay .exhibition__overlay--info {
+            color: $color-white;
+            font-size: 20px;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
+    }
+}
+
+//-------Subtítulo y fechas
+.exhibition2{
+    display: flex;
+    flex-direction: column;
+    font-family: $base-font-family;
+    .exhibition2__subtitle{
+        color: $color-lightBrown;
+        font-size: 38px;
+        align-self: center;
+    }
+    .exhibition2__dates{
+        color: $color-white;
+        font-size: 30px;
+        text-align: center;
+        align-self: center;
+    }
+}
+

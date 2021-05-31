@@ -1,0 +1,31 @@
+@import 'color';
+@import 'font';
+
+//---------------------General variables
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(30,33,45);
+    background: linear-gradient(45deg, rgba(30,33,45,1) 26%, rgba(38,28,25,1) 100%);
+    font-family: $base-font-family;
+    color: $color-white;
+}
+h2{
+    font-family: $base-font-family;
+    color: $color-lightBrown;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+h3{
+    color: $color-lightBrown;
+    font-size: 19px;
+    text-align: center;
+}
+h4{
+    color: #f0d6b2;
+    text-align: justify;
+}

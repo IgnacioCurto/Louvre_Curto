@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Contáctanos | Museo del Louvre</title>
+    <meta name="description"
+    content="¿Quieres ponerte en contacto con nosotros? O acaso organizar una visita especial. Te brindamos nuestra atención para ayudarte en lo que sea!">
+    <meta name="keywords"
+    content="CONTACTO,SOPORTE,INFO,TEL,E-MAIL">
+</head>
+<body>
+    <!--Encabezado fijo-->
+    <header>
+        <h1 class="header__title">Museo del Louvre</h1>
+        <a href="Index.html"><img class="header__logo" src="img/Logo.png" alt="Logo"></a>
+        <nav>
+            <ul class="header__menu">
+                <li><a href="Browse.html">EXPLORAR</a></li>
+                <li><a href="E-shop.html">E-SHOP</a></li>
+                <li><a href="Contact.html">CONTÁCTANOS</a></li>
+                <li><a href="Visit.html">VISÍTANOS</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!--SECCIÓN 2: Contacto-->
+        <h2>Ponte en contacto con nosotros</h2>
+
+        <!--Comienza el formulario-->
+            <!--FIELDSET 1-->
+        <fieldset class="form">
+            <fieldset>
+                <label>Nombre
+                    <input type="text" name="Nombre">
+                </label>
+                <label>Apellido
+                    <input type="text" name="Apellido">
+                </label>
+                <label>E-mail
+                    <input type="email" name='E-mail' placeholder="nombre@ejemplo.com">
+                </label>
+            </fieldset>
+    
+            <!--FIELDSET 2-->
+            <fieldset>
+                <label>Estado civil
+                    <select name="EC" id="Estado civil">
+                        <option value="S">Soltero/a</option>
+                        <option value="C">Casado/a</option>
+                        <option value="D">Divorciado/a</option>
+                        <option value="V">Viudo/a</option>
+                        <option value="O">Otro</option>
+                    </select>
+    
+            <!--FIELDSET 3-->
+                <label>¿Desea recibir el Newsletter?
+                    <input type="checkbox" name="acepta" value="1">
+                </label>
+    
+            <!--Botones de enviar y limpiar-->
+                <input type="submit" name="Enviar formulario">
+                <input type="reset" name="Limpiar formulario">
+            </fieldset>
+        </fieldset>
+
+        <section class="contact1">
+            <h3 class="contact1__comentarios">Dudas, preguntas generales o comentarios:</h3>
+            <h3 class="contact1__email">info@louvre.fr</h3>      
+        </section>
+        
+        <section class="contact2">
+            <p class="contact2__eventos">EVENTOS Y ACTIVIDADES:</p>
+            <p class="contact2__visitas">Visitas guiadas y talleres (solo para visitantes individuales)</p>
+            <p class="contact2__tel">+33 (0)1 40 20 51 77</p>
+        </section>
+        
+    </main>
+    
+
+    
+    <!--SECCIÓN 4: Footer-->
+    <footer class="footer">
+        <p class="footer__tc"><small>Términos y condiciones</small></p>
+        <p class="footer__info"><small>Obtén más información</small></p>
+        <p class="footer__support"><small>Soporte</small></p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

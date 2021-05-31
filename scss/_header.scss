@@ -1,0 +1,57 @@
+@import 'color';
+@import 'font';
+
+//---------------------HEADER
+
+header{
+    nav{
+        padding-bottom: 150px;
+    }
+    .header__logo{
+        width: 105px;
+        height: 65px;
+    }
+    .header__title{
+        color: #f3e1c8;
+        font-family: $base-font-family;
+        font-size: 50px;
+        letter-spacing: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        height: 0px;
+    }
+    
+    .header__menu li{
+        float: left;
+        text-align: left;
+        width: 20%;
+        position: relative;
+        left: 10%;
+        }
+        .header__menu li a{
+            font-family: $base-font-family;
+            color: $color-white;
+            margin-top: 30px;
+            margin-left: 100px;
+            padding-bottom: 10px;
+            display: block;
+            text-decoration: none;  
+            .header__menu li a:hover{
+                color: #f0d6b2;
+            }      
+        }
+    .header__menu ul{
+        list-style-type: none;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Tienda online | Museo del Louvre</title>
+    <meta name="description"
+    content="Visita nuestra tienda online, no hace falta venir al Louvre para traer un poco de arte a casa!">
+    <meta name="keywords"
+    content="TIENDA,SHOP,GIFT SHOP,REGALOS">
+</head>
+<body>
+    <!--Encabezado fijo-->
+    <header>
+        <h1 class="header__title">Museo del Louvre</h1>
+        <a href="Index.html"><img class="header__logo" src="img/Logo.png" alt="Logo"></a>
+        <nav>
+            <ul class="header__menu">
+                <li><a href="Browse.html">EXPLORAR</a></li>
+                <li><a href="E-shop.html">E-SHOP</a></li>
+                <li><a href="Contact.html">CONTÁCTANOS</a></li>
+                <li><a href="Visit.html">VISÍTANOS</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!--SECCIÓN 1: Productos disponibles-->
+
+        <h2 class="productosDisponibles">Productos disponibles:</h2>
+        <div class="dropdown">
+            <div class="row">
+                <div class="col text-end">
+                    <button type="button" class="btn btn-light btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Filtrar por:
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Ropa</a>
+                        <a class="dropdown-item" href="#">Accesorios</a>
+                        <a class="dropdown-item" href="#">Libros</a>
+                        <a class="dropdown-item" href="#">Regalos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Todos los productos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <section class="shop">
+        <article class="shop__producto">
+            <img src="img/Shop/PhoneCase.jpg" alt="Phone Case">
+            <p class="shop__descripcion">Phone Case Mona Lisa</p>
+            <p class="shop__precio">€10</p>
+            <button class="button">Agregar al carrito<i class="agregar"></i></button>
+        </article>
+        <article class="shop__producto">
+            <img src="img/Shop/BuzoPiramide.jpg" alt="Buzo pirámide">
+            <p class="shop__descripcion">Buzo Pirámide <span class="badge badge-pill bg-danger">45% OFF</span></p>
+            <p class="shop__precio">€26<del class="text-danger"><small>€48</small></del></p>
+            <button class="button">Agregar al carrito<i class="agregar"></i></button>
+        </article>
+        <article class="shop__producto">
+            <img src="img/Shop/RemeraLouvre.jpg" alt="Remera Louvre">
+            <p class="shop__descripcion">Remera Louvre</p>
+            <p class="shop__precio">€29</p>
+            <button class="button">Agregar al carrito<i class="agregar"></i></button>
+        </article>
+        <article class="shop__producto">
+            <img src="img/Shop/RemeraMonaLisa.png" alt="Remera Mona Lisa">
+            <p class="shop__descripcion">Remera Mona Lisa <span class="badge badge-pill bg-danger">15% OFF</span></p>
+            <p class="shop__precio">€19<del class="text-danger"><small>€29</small></del></p>
+            <button class="button">Agregar al carrito<i class="agregar"></i></button>
+        </article>
+        <article class="shop__producto">
+            <img src="img/Shop/BolsoTela.jpg" alt="Bolso Tela">
+            <p class="shop__descripcion">Bolso de tela 'Arquitectura'</p>
+            <p class="shop__precio">€12</p>
+            <button class="button">Agregar al carrito<i class="agregar"></i></button>
+        </article>
+        <article class="shop__producto">
+            <img src="img/Shop/Book.jpg" alt="Libro">
+            <p class="shop__descripcion">Libro introducción al Louvre</p>
+            <p class="shop__precio">€18</p>
+            <button class="button">Agregar al carrito<i class="agregar"></i></button>
+        </article>
+        <article class="shop__producto">
+            <img src="img/Shop/Bag.png" alt="Bolso tela Gioconda">
+            <p class="shop__descripcion">Bolso de tela 'Gioconda'</p>
+            <p class="shop__precio">€15</p>
+            <button class="button">Agregar al carrito<i class="agregar"></i></button>
+        </article>
+        <article class="shop__producto">
+            <img src="img/Shop/Bufanda.jpg" alt="Bufanda pirámide">
+            <p class="shop__descripcion">Bufanda Pirámide</p>
+            <p class="shop__precio">€20</p>
+            <button class="button">Agregar al carrito<i class="agregar"></i></button>
+        </article>
+    </section>
+
+        <!--SECCIÓN 2: support-->
+        <h3 class="shop__inc">En caso de algún inconveniente o imprevisto con tu compra,</h3>
+
+        <div class="text-center">
+            <a href="" class="btn btn-light btn-lg btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">contáctanos</a>
+        </div>
+
+        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Escríbenos</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                    <i class="fas fa-user prefix grey-text"></i>
+                    <input type="text" id="form34" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form34">Nombre</label>
+                </div>
+        
+                <div class="md-form mb-5">
+                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <input type="email" id="form29" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form29">E-mail</label>
+                </div>
+        
+                <div class="md-form mb-5">
+                    <i class="fas fa-tag prefix grey-text"></i>
+                    <input type="text" id="form32" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form32">Asunto</label>
+                </div>
+        
+                <div class="md-form">
+                    <i class="fas fa-pencil prefix grey-text"></i>
+                    <textarea type="text" id="form8" class="md-textarea form-control" rows="4" placeholder="..."></textarea>
+                    <label data-error="wrong" data-success="right" for="form8">Tu mensaje</label>
+                </div>
+        
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-unique">Enviar<i class="fas fa-paper-plane-o ml-1"></i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <!--SECCIÓN 3: Footer-->
+    <footer class="footer">
+        <p class="footer__tc"><small>Términos y condiciones</small></p>
+        <p class="footer__info"><small>Obtén más información</small></p>
+        <p class="footer__support"><small>Soporte</small></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
