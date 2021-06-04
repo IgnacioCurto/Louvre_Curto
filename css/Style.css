@@ -16,38 +16,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #e6e6e6; }
 
-.full{
-  width: 100%;
-  height: 70%;
-  background-image: url('img/test.jpeg') no-repeat 50% 50%;
-  background-size: cover;
-  display: table;
-  margin: auto;
-  top: 0;
-}
-
-.full-inner{
-  width: 100%;
-  vertical-align: middle;
-  display: table-cell;
-}
-
-.content{
-  max-width: 700px;
-  margin-left: 9rem;
-  text-align: left;
-}
-
-.content h1{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: lighter;
-  font-size: 700%;
-  letter-spacing: 7px;
-  width: 100%;
-  text-transform: uppercase;
-  color: black;
-}
-  
 h2 {
   font-family: 'Montserrat', sans-serif;
   color: #c5a880;
@@ -65,6 +33,7 @@ h4 {
 
 /*-------Menú-------*/
 .header__logo {
+  position: absolute;
   width: 105px;
   height: 65px; }
 
@@ -89,6 +58,9 @@ h4 {
 .header__menu li a:hover {
   color: #f0d6b2; }
 
+.header__menu a.active {
+  color: #f0d6b2; }
+
 .header__menu li {
   float: left;
   text-align: left; }
@@ -103,83 +75,44 @@ li {
   position: relative;
   left: 10%; }
 
-li a:hover {
-  color: #f0d6b2;
-  text-decoration: none; }
 
 nav {
-  padding-bottom: 150px; }
+  padding-bottom: 100px; }
 
 /*-------------------------------------------------------------INDEX-------------------------------------------------------------*/
-/*-------Grid 1-------*/
-.grid1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 1fr;
-  height: 350px; }
-
-.grid1__quote {
-  color: #e6e6e6;
-  grid-column: 2fr;
-  grid-row: 1fr;
-  font-size: 48px;
-  text-align: right;
-  margin-left: 80px;
-  font-family: 'Montserrat', sans-serif; }
-
-.grid1__img {
-  grid-column: 1fr;
-  grid-row: 1fr;
-  padding-left: 180px;
-  position: relative;
-  width: 50%;
-  transition: .5s ease; }
-
-.grid1__img:hover {
-  transform: scale(1.02); }
-
-.grid1__img--Overlay {
-  border-radius: 50%;
-  position: absolute;
+.index__landing{
+  width: 100%;
+  height: 70%;
+  background: url('../img/Index/Museo.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  display: table;
+  margin: auto;
   top: 0;
-  height: 360px;
-  width: 360px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #36251c94; }
+}
+.index__landing-inner{
+  width: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
 
-.grid1__img:hover .grid1__img--Overlay {
-  transform: scale(1);
-  opacity: 1; }
+.index__content{
+  max-width: 700px;
+  margin-left: 9rem;
+  text-align: left;
+}
 
-.text {
+.index__content h1{
+  position: relative;
   font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 700%;
+  letter-spacing: 8px;
+  width: 100%;
+  text-transform: uppercase;
   color: #e6e6e6;
-  font-size: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+}
 
-.grid1__author {
-  font-family: 'Montserrat', sans-serif;
-  transform: translate(80px);
-  color: #f0d6b2;
-  grid-column: 1fr;
-  grid-row: 3fr;
-  font-size: 35px;
-  text-align: end;
-  margin-top: 25px;
-  height: 100px; }
-
-#img {
-  width: 360px;
-  height: 360px;
-  border-radius: 50%;
-  border: solid 2px #f0d6b257; }
-
-/*-------Grid 2-------*/
+/*-------Grid-------*/
 .grid2 {
   margin-top: 100px;
   display: grid;
@@ -191,7 +124,8 @@ nav {
 
 .grid2__intro {
   color: #e6e6e6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
   grid-column: 1fr;
   grid-row: 1fr;
   align-self: center;
@@ -216,6 +150,39 @@ nav {
   transform: scale(0.98); }
 
 /*-------------------------------------------------------------EXPLORAR-------------------------------------------------------------*/
+.browse__landing{
+  width: 100%;
+  height: 70%;
+  background: url('../img/Browse/Landing.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  display: table;
+  margin: auto;
+  top: 0;
+}
+.browse__landing-inner{
+  width: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.browse__content{
+  max-width: 700px;
+  margin-left: 9rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.browse__content p{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 500%;
+  letter-spacing: 8px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #e6e6e6;
+}
+
 /*Layout*/
 .containerBrowse {
   width: 98%;
@@ -285,33 +252,123 @@ nav {
   grid-column: 5 / 9;
   grid-row: 9 / 10;}
 
+.gallery__Encajera {
+  background-image: url("/img/Browse/Encajera.jpeg"); 
+  grid-column: 1 / 3;
+  grid-row: 10 / 12;}
+
+.gallery__Virgen {
+  background-image: url("/img/Browse/Virgen.png"); 
+  grid-column: 3 / 6;
+  grid-row: 10 / 12;}
+
+.gallery__Batallas {
+  background-image: url("/img/Browse/Batallas.png"); 
+  grid-column: 6 / 9;
+  grid-row: 10 / 10;}
+
+.gallery__Minerva {
+  background-image: url("/img/Browse/Minerva.png"); 
+  grid-column: 6 / 9;
+  grid-row: 11 / 12;}
+
+.gallery__David {
+  background-image: url("/img/Browse/David.png"); 
+  grid-column: 1 / 5;
+  grid-row: 12 / 15;}
+
+.gallery__Concierto {
+  background-image: url("/img/Browse/Concierto.png"); 
+  grid-column: 5 / 9;
+  grid-row: 12 / 15;}
+
+.gallery__Marcellus {
+  background-image: url("/img/Browse/Marcellus.png"); 
+  grid-column: 1 / 3;
+  grid-row: 15 / 18;}
+
+.gallery__Spartacus {
+  background-image: url("/img/Browse/Spartacus.png"); 
+  grid-column: 3 / 5;
+  grid-row: 15 / 18;}
+
+.gallery__Dante {
+  background-image: url("/img/Browse/Dante.png"); 
+  grid-column: 5 / 9;
+  grid-row: 15 / 18;}
+
+
+
+
+
 /*-------------------------------------------------------------E-SHOP-------------------------------------------------------------*/
+.shop__landing{
+  width: 100%;
+  height: 80%;
+  background: url('../img/Shop/Shop.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  display: table;
+  margin: auto;
+  top: 0;
+}
+.shop__landing-inner{
+  width: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.shop__content{
+  max-width: 700px;
+  margin-left: 9rem;
+}
+
+.shop__content p{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 500%;
+  letter-spacing: 8px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #e6e6e6;
+}
+
 .shop {
   padding: 1.8rem 0;
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
   grid-row-gap: 90px; }
 
 .shop .shop__producto {
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
+  backdrop-filter: blur( 12.5px );
+  -webkit-backdrop-filter: blur( 12.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: #e6e6e6;
   font-size: 18px;
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-gap: 4px; }
+  grid-gap: 4px; 
+  transition: .3s ease-in-out;}
+
+.shop .shop__producto:hover{
+  transform: scale(0.95);}
+
 
 .shop img {
   max-width: 100%;
-  grid-row: 1;
-  transition: .3s ease-in-out; }
-
-.shop img:hover {
-  transform: scale(0.95); }
+  grid-row: 1; }
 
 .shop .shop__descripcion {
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   grid-row: 2; }
 
@@ -325,6 +382,7 @@ nav {
   background-color: #c5a88054;
   grid-row: 4;
   padding: 8px;
+  border-radius: 10px;
   transition: .2s ease-in-out; }
 
 .shop button:hover {
@@ -341,6 +399,38 @@ nav {
   color: #e6e6e6; }
 
 /*-------------------------------------------------------------CONTACTO-------------------------------------------------------------*/
+.contact__landing{
+  width: 100%;
+  height: 70%;
+  background: url('../img/Contact/Contact.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  display: table;
+  margin: auto;
+  top: 0;
+}
+.contact__landing-inner{
+  width: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.contact__content{
+  max-width: 700px;
+  margin-left: 9rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contact__content p{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 500%;
+  letter-spacing: 8px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #e6e6e6;
+}
 /*Formulario*/
 .form {
   color: #e6e6e6;
@@ -386,6 +476,37 @@ nav {
   font-size: 20px; }
 
 /*-------------------------------------------------------------VISITA-------------------------------------------------------------*/
+.visit__landing{
+  width: 100%;
+  height: 80%;
+  background: url('../img/Visit/Visit.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  display: table;
+  margin: auto;
+  top: 0;
+}
+.visit__landing-inner{
+  width: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.visit__content{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 700px;
+  margin-left: 9rem;
+}
+.visit__content p{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 500%;
+  letter-spacing: 8px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #e6e6e6;
+}
+
 /*Intro*/
 .expo {
   margin-left: 20px;
