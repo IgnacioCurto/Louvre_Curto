@@ -3,29 +3,32 @@
 
 //---------------------General variables
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: rgb(30,33,45);
-    background: linear-gradient(45deg, rgba(30,33,45,1) 26%, rgba(38,28,25,1) 100%);
-    font-family: $base-font-family;
-    color: $color-white;
-}
-h2{
-    font-family: $base-font-family;
-    color: $color-lightBrown;
+    box-sizing: border-box; }
+
+body {
+    background: #1e212d;
+    background: linear-gradient(45deg, #1e212d 26%, #261c19 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: #e6e6e6; }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #c5a880;
     font-size: 30px;
-    letter-spacing: 2px;
-}
-h3{
-    color: $color-lightBrown;
+    letter-spacing: 2px; }
+
+h3 {
+    color: #c5a880;
     font-size: 19px;
-    text-align: center;
-}
-h4{
+    text-align: center; }
+
+h4 {
     color: #f0d6b2;
-    text-align: justify;
+    text-align: justify; }
+
+span{
+    color: #c5a880;
 }

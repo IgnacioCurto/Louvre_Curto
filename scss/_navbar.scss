@@ -1,0 +1,52 @@
+@import 'color';
+@import 'font';
+
+//---------------------HEADER
+
+.header__logo {
+    position: absolute;
+    width: 105px;
+    height: 65px; }
+
+
+.header__menu li {
+    float: left;
+    text-align: left; 
+}
+.header__menu li a {
+    font-family: 'Montserrat', sans-serif;
+    color: #e6e6e6;
+    margin-top: 30px;
+    margin-left: 100px;
+    padding-bottom: 10px;
+    display: block;
+    text-decoration: none; 
+}
+.header__menu li a:hover {
+    color: #f0d6b2; 
+}        
+.header__menu a.active {
+    color: #f0d6b2; 
+}        
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+    text-decoration: none; }
+
+li {
+    width: 20%;
+    position: relative;
+    left: 10%; }
+
+
+nav {
+    padding-bottom: 100px; }
+
+
+
+
+
+
+
+

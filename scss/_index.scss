@@ -3,111 +3,84 @@
 
 //=======================================INDEX=======================================//
 
-//-----------GRID 1-----------//
-.grid1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 1fr;
-    height: 350px;
-
-    .grid1__quote{
-        color: $color-white;
-        font-family: $base-font-family;
-        grid-column: 2fr;
-        grid-row: 1fr;
-        font-size: 48px;
-        text-align: right;
-        margin-left: 80px;
-        transform: translate(80px);
-        transition: 1s ease-in-out;
-        font-family: $base-font-family;
-    }
-
-    .grid1__img{
-        grid-column: 1fr;
-        grid-row: 1fr;
-        padding-left: 180px;
-        position: relative;
-        width: 50%;
-        .grid1__img--Overlay {
-            border-radius: 50%;
-            position: absolute;
-            top: 0;
-            height: 360px;
-            width: 360px;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: #36251c94;
-            .grid1__img:hover .grid1__img--Overlay {
-                opacity: 1;
-                .text {
-                    font-family: $base-font-family;
-                    color: $color-white;
-                    font-size:40px;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    text-align: center;
-                }
-            }
-        }
-    }
-    .grid1__author{
-        font-family: $base-font-family;
-        transform: translate(80px);
-        color: $color-lightBrown;
-        grid-column: 1fr;
-        grid-row: 3fr;
-        font-size: 35px;
-        text-align: end;
-        margin-top: 25px;
-        height: 100px
-    }
-    #img{
-        width: 360px; 
-        height: 360px;
-        border-radius: 50%;
-        border: solid 2px #f0d6b257;
-    }
+.index__landing{
+    width: 100%;
+    height: 70%;
+    background: url('../img/Index/Museo.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+    margin: auto;
+    top: 0;
 }
+.index__landing-inner{
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+    }
+.index__content{
+    max-width: 700px;
+    margin-left: 9rem;
+    text-align: left;}
+.index__content h1{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 700%;
+    letter-spacing: 8px;
+    width: 100%;
+    text-transform: uppercase;
+    color: #e6e6e6;
+    }
 
-
-
-//-----------GRID 2-----------//
-.grid2{
+/*-------Grid-------*/
+.grid2 {
     margin-top: 100px;
     display: grid;
     grid-template-columns: 750px 1fr;
     grid-template-rows: 400px 1fr;
     grid-row-gap: 30px;
-    background: rgba(240, 182, 106, 0.212);
-    background: linear-gradient(180deg, rgba(240, 182, 106, 0.212) 0%, rgba(38,28,25,0) 73%);
     padding-top: 30px;
     padding-bottom: 30px;
-    border-radius: 5%;
-
-    .grid2__intro{
-        color: $color-white ;
-        font-family: $base-font-family;
+    .grid2__intro {
+        color: #e6e6e6;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
         grid-column: 1fr;
         grid-row: 1fr;
         align-self: center;
-        font-size: 30px;
+        font-size: 32px;
         text-align: left;
         word-spacing: 2px;
         margin-left: 10px;
-    }
-
-    .grid2__img{
-        grid-column: 1fr;
-        grid-row: 1fr;
-        .grid2__img img{
-            border-radius: 3%;
-            transition: .6s ease-in-out;
-            .grid2__img img:hover{
-                transform: scale(0.98)
+        .grid2__img {
+            margin-right: 10px;
+            grid-column: 2fr;
+            grid-row: 1fr; 
+            align-self: center;
+            .grid2__img img {
+                border-radius: 3%;
+                transition: .6s ease-in-out; 
+                .grid2__img img:hover {
+                    transform: scale(0.98); 
+                }
             }
         }
     }
+}
+.par{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 200;
+    color: #e6e6e6;
+    text-align: left;
+    font-size: 33px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+.par a{
+    text-decoration: none;
+    color: #c5a880;
+}
+.carousel{
+    box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
 }

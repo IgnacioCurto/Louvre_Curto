@@ -3,44 +3,68 @@
 
 //=======================================CONTACTO=======================================//
 
-.contact1{
-    .contact1__email{
-        text-decoration: underline;
-        color: $color-white;
-        text-align: center;
-        font-size: 20px;
-        margin-top: 5px;
-        font-family: $base-font-family;
-    }
-    .contact1__comentarios{
-        color: $color-white;
-        margin-top: 20px;
-        text-align: center;
-        font-family: $base-font-family;
-    }
+.contact__landing{
+    width: 100%;
+    height: 70%;
+    background: url('../img/Contact/Contact.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+    margin: auto;
+    top: 0;
+}
+.contact__landing-inner{
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
 }
 
-
-.contact2{
-    .contact2__eventos{
-        font-family: $base-font-family;
-        color: $color-lightBrown;
-        text-align: center;
-        font-size: $subtitle-font-size;
-        margin-top: 20px;
-    }
-    .contact2__visitas{
-        font-family: $base-font-family;
-        color: $color-white;
-        text-align: center;
-        font-size: 17px;
-    }
-    .contact2__tel{
-        font-family: $base-font-family;
-        color: $color-lightBrown;
-        text-align: center;
-        font-size: 20px;
-    }
+.contact__content{
+    max-width: 700px;
+    margin-left: 9rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
+.contact__content h2{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 500%;
+    letter-spacing: 8px;
+    width: 100%;
+    text-transform: uppercase;
+    color: #e6e6e6;
+}
 
+/*Formulario*/
+.formulario{
+    margin-top: 30px;
+}
+/*Otros medios de contacto*/
+.contact__info {
+    text-decoration: underline;
+    color: #e6e6e6;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 45px;
+    margin-left: 30%;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif; }
+
+.contact__title {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #c5a880;
+    text-align: left;
+    margin-left: 30%;
+    font-size: 30px;
+    margin-top: 50px; }
+
+.contact__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #e6e6e6;
+    text-align: left;
+    margin-left: 30%;
+    width: 40%;
+    font-size: 17px; }

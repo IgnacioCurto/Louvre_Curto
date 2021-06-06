@@ -2,69 +2,104 @@
 @import 'font';
 
 //=======================================SHOP=======================================//
-
-.shop{
-    padding: 1.8rem 0;
-    margin-top: 30px;
-    margin-bottom: 30px;    
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);     
-    grid-row-gap: 90px; 
-
-    .shop .shop__producto{    
-        color: $color-white;
-        font-size: 18px;
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        grid-gap: 4px;
-    }
-    .shop img{
-        max-width: 100%;   
-        grid-row: 1;
-        transition: .3s ease-in-out;
-        .shop img:hover{
-            transform: scale(0.95);
-        }
-    }
-    .shop .shop__descripcion {   
-        font-family: $base-font-family;
-        grid-row: 2;   
-    }
-    .shop .shop__precio {   
-        font-family: $base-font-family;
-        grid-row: 3;   
-    }
-    .shop button{
-        font-family: $base-font-family;
-        color: $color-white;
-        background-color: #c5a88054;
-        grid-row: 4;
-        padding: 8px;
-        transition: .2s ease-in-out;
-        .shop button:hover{
-            transform: scale(1.05);
-            color: $color-lightBrown;
-            background-color: rgb(30,33,45);
-        }
-    }
-    .shop__contact{
-        text-decoration: underline;
-        color: $color-lightBrown;
-    }
-    .shop__inc{
-        font-family: $base-font-family;
-        color: $color-white;
-    }    
+.shop__landing{
+    width: 100%;
+    height: 80%;
+    background: url('../img/Shop/Shop.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+    margin: auto;
+    top: 0;
+}
+.shop__landing-inner{
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+.shop__content{
+    max-width: 700px;
+    margin-left: 9rem;
 }
 
+.shop__content h2{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 500%;
+    letter-spacing: 8px;
+    width: 100%;
+    text-transform: uppercase;
+    color: #e6e6e6;
+}
+
+.shop {
+    padding: 1.8rem 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 90px; }
+
+.shop .shop__producto {
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #e6e6e6;
+    font-size: 18px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 4px; 
+    transition: .3s ease-in-out;}
+
+.shop .shop__producto:hover{
+    transform: scale(0.95);}
 
 
+.shop img {
+    max-width: 100%;
+    grid-row: 1; }
 
+.shop .shop__descripcion {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    grid-row: 2; }
 
+.shop .shop__precio {
+    font-family: 'Montserrat', sans-serif;
+    grid-row: 3; }
 
+.shop button {
+    font-family: 'Montserrat', sans-serif;
+    color: #e6e6e6;
+    background-color: #c5a88054;
+    grid-row: 4;
+    padding: 8px;
+    border-radius: 10px;
+    transition: .2s ease-in-out; }
 
+.shop button:hover {
+    transform: scale(1.05);
+    color: #c5a880;
+    background-color: #1e212d; }
 
+.shop__contact {
+    text-decoration: underline;
+    color: #c5a880; }
 
-
+.shop__inc {
+    font-family: 'Montserrat', sans-serif;
+    color: #e6e6e6;
+    margin-bottom: 30px;
+}
+.shop__inc a{
+    text-decoration: none;
+    color: #c5a880;
+}
