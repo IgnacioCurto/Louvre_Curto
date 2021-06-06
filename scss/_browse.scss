@@ -23,13 +23,13 @@
     padding-bottom: 40px;}
 .browse__content h2{
     position: relative;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $base-font-family;
     font-weight: lighter;
     font-size: 500%;
     letter-spacing: 8px;
     width: 100%;
     text-transform: uppercase;
-    color: #e6e6e6;
+    color: $color-white;
 }
 
 
@@ -52,222 +52,15 @@
     }
 }
 /*-------Obras-------*/
-.gallery__Gioconda {
-    background-image: url("/img/Browse/Gioconda.jpg"); 
-    grid-column: 1 / 3;
-    grid-row:1 / 6;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Gioconda:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
 
-
-.gallery__Bodas {
-    background-image: url("/img/Browse/Bodas.jpg");
-    grid-column: 3 / 5;
-    grid-row: 1 / 3; 
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
+@each $artwork in Gioconda, Bodas, Balsa, Libertad, Belle, Escriba, Venus, Juramento, Psique, Encajera, Virgen, Batallas, Minerva, David, Concierto, Marcellus, Spartacus, Dante {
+    .gallery__#{$artwork} {
+        background-image: url('/img/Browse/#{$artwork}.jpg');
+        transition: .3s ease-in-out;
+        filter: grayscale(1);
+    }
+    .gallery__#{$artwork}:hover {
+        transform: scale(1.03);
+        filter: grayscale(0); }
 }
-.gallery__Bodas:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Balsa {
-    background-image: url("/img/Browse/Balsa.jpg"); 
-    grid-column: 5 / 9;
-    grid-row: 1 / 6;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Balsa:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-
-
-.gallery__Libertad {
-    background-image: url("/img/Browse/Libertad.jpg"); 
-    grid-column: 3 / 5;
-    grid-row: 3 / 6;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Libertad:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Belle {
-    background-image: url("/img/Browse/Belle.jpg"); 
-    grid-column:1 / 3;
-    grid-row: 6 / 8;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Belle:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Escriba {
-    background-image: url("/img/Browse/Escriba.jpg");
-    grid-column: 1 / 3;
-    grid-row: 8 / 10; 
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Escriba:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Venus {
-    background-image: url("/img/Browse/Venus.jpg"); 
-    grid-column: 3 / 5;
-    grid-row: 6 / 10;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Venus:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Juramento {
-    background-image: url("/img/Browse/Juramento.jpg"); 
-    grid-column: 5 / 9;
-    grid-row: 6 / 9;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Juramento:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Psique {
-    background-image: url("/img/Browse/Psique.jpg"); 
-    grid-column: 5 / 9;
-    grid-row: 9 / 10;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Psique:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Encajera {
-    background-image: url("/img/Browse/Encajera.jpeg"); 
-    grid-column: 1 / 3;
-    grid-row: 10 / 12;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Encajera:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Virgen {
-    background-image: url("/img/Browse/Virgen.png"); 
-    grid-column: 3 / 6;
-    grid-row: 10 / 12;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Virgen:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Batallas {
-    background-image: url("/img/Browse/Batallas.png"); 
-    grid-column: 6 / 9;
-    grid-row: 10 / 10;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Batallas:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Minerva {
-    background-image: url("/img/Browse/Minerva.png"); 
-    grid-column: 6 / 9;
-    grid-row: 11 / 12;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Minerva:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__David {
-    background-image: url("/img/Browse/David.png"); 
-    grid-column: 1 / 5;
-    grid-row: 12 / 15;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__David:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Concierto {
-    background-image: url("/img/Browse/Concierto.png"); 
-    grid-column: 5 / 9;
-    grid-row: 12 / 15;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Concierto:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Marcellus {
-    background-image: url("/img/Browse/Marcellus.png"); 
-    grid-column: 1 / 3;
-    grid-row: 15 / 18;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Marcellus:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Spartacus {
-    background-image: url("/img/Browse/Spartacus.png"); 
-    grid-column: 3 / 5;
-    grid-row: 15 / 18;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Spartacus:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
-.gallery__Dante {
-    background-image: url("/img/Browse/Dante.png"); 
-    grid-column: 5 / 9;
-    grid-row: 15 / 18;
-    transition: .3s ease-in-out;
-    filter: grayscale(1);
-}
-.gallery__Dante:hover{
-    transform: scale(1.03);
-    filter: grayscale(0); 
-}
-
+/*Luego de aplicar este @each falta asignarle a cada obra una posición en la grilla

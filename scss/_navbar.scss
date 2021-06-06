@@ -14,8 +14,8 @@
     text-align: left; 
 }
 .header__menu li a {
-    font-family: 'Montserrat', sans-serif;
-    color: #e6e6e6;
+    font-family: $base-font-family;
+    color: $color-white;
     margin-top: 30px;
     margin-left: 100px;
     padding-bottom: 10px;

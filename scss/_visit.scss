@@ -25,13 +25,13 @@
 }
 .visit__content h2{
     position: relative;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $base-font-family;
     font-weight: lighter;
     font-size: 500%;
     letter-spacing: 8px;
     width: 100%;
     text-transform: uppercase;
-    color: #e6e6e6;
+    color: $color-white;
 }
 
 /*Intro*/
@@ -74,7 +74,7 @@
     opacity: 1; }
 
 .exhibition__overlay .exhibition__overlay--title {
-    color: #c5a880;
+    color: $color-lightBrown;
     font-size: 60px;
     position: absolute;
     top: 15%;
@@ -83,7 +83,7 @@
     text-align: center; }
 
 .exhibition__overlay .exhibition__overlay--info {
-    color: #e6e6e6;
+    color: $color-white;
     font-size: 20px;
     position: absolute;
     top: 60%;
@@ -98,7 +98,7 @@
     margin-bottom: 120px; }
 
 .exhibition2__subtitle {
-    color: #c5a880;
+    color: $color-lightBrown;
     font-size: 38px;
     align-self: center; }
 

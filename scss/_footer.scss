@@ -15,7 +15,7 @@ footer{
     box-shadow: inset 0 15px 30px -7px rgba(0,0,0,0.4);
     width: 100%;
     background-color: #181a22;
-    color: #e6e6e6;
+    color: $color-white;
     display: flex;
     margin: auto;
     max-width: 100%;
@@ -24,11 +24,11 @@ footer{
 }
 
 .footer h4{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $base-font-family;
     font-size: 22px;
   }
   .footer p{
-    font-family: 'Roboto', sans-serif;
+    font-family: $secondary-font-family;
     font-weight: lighter;
 }
 

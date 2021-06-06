@@ -23,13 +23,13 @@
 
 .shop__content h2{
     position: relative;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $base-font-family;
     font-weight: lighter;
     font-size: 500%;
     letter-spacing: 8px;
     width: 100%;
     text-transform: uppercase;
-    color: #e6e6e6;
+    color: $color-white;
 }
 
 .shop {
@@ -51,7 +51,7 @@
     -webkit-backdrop-filter: blur( 12.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    color: #e6e6e6;
+    color: $color-white;
     font-size: 18px;
     display: grid;
     align-items: center;
@@ -69,16 +69,16 @@
 
 .shop .shop__descripcion {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $base-font-family;
     grid-row: 2; }
 
 .shop .shop__precio {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $base-font-family;
     grid-row: 3; }
 
 .shop button {
-    font-family: 'Montserrat', sans-serif;
-    color: #e6e6e6;
+    font-family: $base-font-family;
+    color: $color-white;
     background-color: #c5a88054;
     grid-row: 4;
     padding: 8px;
@@ -87,19 +87,19 @@
 
 .shop button:hover {
     transform: scale(1.05);
-    color: #c5a880;
+    color: $color-lightBrown;
     background-color: #1e212d; }
 
 .shop__contact {
     text-decoration: underline;
-    color: #c5a880; }
+    color: $color-lightBrown; }
 
 .shop__inc {
-    font-family: 'Montserrat', sans-serif;
-    color: #e6e6e6;
+    font-family: $base-font-family;
+    color: $color-white;
     margin-bottom: 30px;
 }
 .shop__inc a{
     text-decoration: none;
-    color: #c5a880;
+    color: $color-lightBrown;
 }
