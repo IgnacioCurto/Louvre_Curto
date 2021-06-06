@@ -32,70 +32,122 @@
         <section class="contact__landing">
             <section class="contact__landing-inner">
                 <div class="contact__content">
-                    <p>Contacto</p>
+                    <h2>Contacto</h2>
                 </div>
             </section>
         </section>
-    <!--SECCIÓN 2: Contacto-->
+    <!--SECCIÓN 2: Formulario-->
 
         <!--Comienza el formulario-->
-            <!--FIELDSET 1-->
-        <fieldset class="form">
-            <fieldset>
-                <label>Nombre
-                    <input type="text" name="Nombre">
-                </label>
-                <label>Apellido
-                    <input type="text" name="Apellido">
-                </label>
-                <label>E-mail
-                    <input type="email" name='E-mail' placeholder="nombre@ejemplo.com">
-                </label>
-            </fieldset>
-    
-            <!--FIELDSET 2-->
-            <fieldset>
-                <label>Estado civil
-                    <select name="EC" id="Estado civil">
-                        <option value="S">Soltero/a</option>
-                        <option value="C">Casado/a</option>
-                        <option value="D">Divorciado/a</option>
-                        <option value="V">Viudo/a</option>
-                        <option value="O">Otro</option>
-                    </select>
-    
-            <!--FIELDSET 3-->
-                <label>¿Desea recibir el Newsletter?
-                    <input type="checkbox" name="acepta" value="1">
-                </label>
-    
-            <!--Botones de enviar y limpiar-->
-                <input type="submit" name="Enviar formulario">
-                <input type="reset" name="Limpiar formulario">
-            </fieldset>
-        </fieldset>
+        <section class="formulario">
+            <div class="col-lg-7 mx-auto">
+                <div class="card-body bg-dark">
+                    <div class="container">
+                        <form id="contact-form" role="form">
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group text-white"> <label for="form_name">Nombre</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Ingresa tu nombre" required="required" data-error="Se requiere un nombre"> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group text-white"> <label for="form_lastname">Apellido</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Ingresa tu apellido" required="required" data-error="Se requiere un apellido"> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group text-white"> <label for="form_email">E-mail</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="nombre@ejemplo.com" required="required" data-error="El E-mail no es válido"> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group text-white"> <label for="form_need">Motivo de contacto</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Especifica tu motivo">
+                                                <option value="" selected disabled>...</option>
+                                                <option>Problemas e la tienda online</option>
+                                                <option>Investigación o documentación</option>
+                                                <option>Visita escolar</option>
+                                                <option>Empresa o profesional</option>
+                                                <option>Empleo</option>
+                                                <option>Otro</option>
+                                            </select> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group"> <label for="form_message"></label> <textarea id="form_message" name="message" class="form-control" placeholder="Ingresa tu mensaje..." rows="4" required="required" data-error="Se requiere un mensaje"></textarea> </div>
+                                    </div>
+                                    <div class="col-md-12"> <input type="submit" class="btn text-white btn-dark btn-send pt-2 btn-block " value="Send Message"> </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section class="contact1">
-            <h3 class="contact1__comentarios">Dudas, preguntas generales o comentarios:</h3>
-            <h3 class="contact1__email">info@louvre.fr</h3>      
+        <!--SECCIÓN 3: Contacto-->
+        <section class="contact">
+            <h2 class="contact__title">Eventos y actividades:</h2>
+            <h3 class="contact__subtitle">Visitas guiadas y talleres (solo para visitantes individuales)</h3>
+            <h3 class="contact__info">+33 (0)1 40 20 51 77</h3>
+
+            <h2 class="contact__title">Investigación y documentación</h2>
+            <h3 class="contact__subtitle">Exploración de imágenes y fotografías</h3>
+            <h3 class="contact__info">photo@rmn.fr</h3>
+            <h3 class="contact__subtitle">Permiso para pintar o dibujar en las salas del museo</h3>
+            <h3 class="contact__info">copistes@louvre.fr</h3>
+            <h3 class="contact__subtitle">Investigación científica</h3>
+            <h3 class="contact__info">contact-recherche-scientifique@louvre.fr</h3>
+
+            <h2 class="contact__title">Empresas y profesionales</h2>
+            <h3 class="contact__subtitle">Patrocinio & socios</h3>
+            <h3 class="contact__info">mecenat@louvre.fr</h3>
+            <h3 class="contact__subtitle">Privatización de espacios</h3>
+            <h3 class="contact__info">evenements@louvre.fr</h3>
+            <h3 class="contact__subtitle">Organización de rodajes</h3>
+            <h3 class="contact__info">tournages@louvre.fr</h3>
+
+            <h2 class="contact__title">Empleo</h2>
+            <h3 class="contact__subtitle">Consulta las ofertas disponibles en nuestro portal de empleo (en francés) o Linkedin. Las candidaturas para ofertas de empleo, prácticas de empresa, o de manera espontánea, se deberán enviar a candidatures@louvre.fr, con un currículum y una carta de motivación adjuntos.</h3>
         </section>
         
-        <section class="contact2">
-            <p class="contact2__eventos">EVENTOS Y ACTIVIDADES:</p>
-            <p class="contact2__visitas">Visitas guiadas y talleres (solo para visitantes individuales)</p>
-            <p class="contact2__tel">+33 (0)1 40 20 51 77</p>
-        </section>
-        
+
+    </div>
     </main>
     
 
     
+
+    
     <!--SECCIÓN 4: Footer-->
-    <footer class="footer">
-        <p class="footer__tc"><small>Términos y condiciones</small></p>
-        <p class="footer__info"><small>Obtén más información</small></p>
-        <p class="footer__support"><small>Soporte</small></p>
+    <footer>
+        <div class="footer__container">
+            <div class="footer">
+                <div class="footer__col1">
+                    <h4>Más información</h4>
+                    <p>El Establecimiento Público del Museo del Louvre se comprometerá a respetar los principios en materia de procesamiento y recopilación de datos personales.</p>
+                </div>
+                <div class="footer__col2">
+                    <h4>Redes sociales</h4>
+                    <div class="footer__col2-row">
+                        <a href="https://www.facebook.com/museedulouvre"><img src="img/Footer/facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/museelouvre/"><img src="img/Footer/instagram.png" alt=""></a>
+                        <a href="https://twitter.com/museelouvre"><img src="img/Footer/twitter.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer__col3">
+                    <h4>Contacto</h4>
+                    <div class="row2">
+                        <img src="img/Footer/phone.png" alt="">
+                        <label>+549341214655</label>
+                    </div>
+                    <div class="row2">
+                        <img src="img/Footer/mail.png" alt="">
+                        <label>museedulouvre@gmail.com</label>
+                    </div>
+                </div>
+        </div>
     </footer>
+
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
