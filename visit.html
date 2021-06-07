@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Visitas | Museo del Louvre</title>
     <meta name="description"
     content="Adéntrate en la historia: Conoce nuestro museo y sus magníficas obras">
@@ -41,6 +42,86 @@
         <p class="expo">Es por eso que estamos orgullosos de presentarles:</p>
         <!--Se listan las exhibiciones activas-->
         <!-------------------------------EXHIBICION #1------------------------------->
+        
+        <section class="expo__container row">
+            <div class="hover-img col-md-5">
+                <img src="img/Visit/Expo1.jpg"/>
+                <div class="expo__title">
+                    <h3>Cuerpo y alma</h3>
+                </div>
+            </div>
+            <div class="expo__info col-md-5">
+                <h3 class="expo__info--subtitle">Escultura renacentista italiana, de Donatello a Miguel Ángel</h3>
+                <h3 class="expo__info--date">22/12/2020 – 03/07/2021</h3>
+            </div>
+                <div class="col-md-2"></div>
+                    <a class="btn btn-dark text-light" data-toggle="collapse" href="#multiCollapseExpo1" role="button" aria-expanded="false" aria-controls="multiCollapseExpo1">Saber más</a>
+                <div class="col-md-7">
+                    <div class="collapse multi-collapse" id="multiCollapseExpo1">
+                        <div class="card card-body">
+                            La representación de la figura humana y del movimiento, en sus múltiples facetas, dio lugar a formas muy innovadoras. El estudio de la expresión y de los sentimientos humanos ocupan un eje central en el trabajo de los grandes escultores de este periodo, desde Donatello a uno de los más celebres artistas que ha dado la historia: Miguel Ángel.
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="expo__container row">
+            <div class="hover-img col-md-5">
+                <img src="img/Visit/Expo2.jpg"/>
+                <div class="expo__title">
+                    <h3>Figura de artista</h3>
+                </div>
+            </div>
+            <div class="expo__info col-md-5">
+                <h3 class="expo__info--subtitle">Da Vinci, Donatello, Miguel Ángel y Altdorfer.</h3>
+                <h3 class="expo__info--date">15/09/2020 – 05/07/2021</h3>
+            </div>
+                <div class="col-md-2"></div>
+                    <a class="btn btn-dark text-light" data-toggle="collapse" href="#multiCollapseExpo2" role="button" aria-expanded="false" aria-controls="multiCollapseExpo2">Saber más</a>
+                <div class="col-md-7">
+                    <div class="collapse multi-collapse" id="multiCollapseExpo2">
+                        <div class="card card-body">
+                            El Renacimiento es el momento en el que el artista afirma su independencia: este empieza a renunciar a su estatus de artesano para reivindicar una determinada plaza dentro de la sociedad. No obstante, el origen de la figura del artista es mucho más antiguo y complejo que lo que las colecciones del Louvre reflejan, ya que en ellas solo vemos ejemplos que van de las primeras firmas realizadas por los artesanos de la Antigüedad a los autorretratos del romanticismo. 
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="expo__container row">
+            <div class="hover-img col-md-5">
+                <img src="img/Visit/Expo3.jpg"/>
+                <div class="expo__title">
+                    <h3>Un duelo romántico</h3>
+                </div>
+            </div>
+            <div class="expo__info col-md-5">
+                <h3 class="expo__info--subtitle">"El Giaour" de Lord Byron visto por Delacroix.</h3>
+                <h3 class="expo__info--date">03/12/2020 – 01/10/2021</h3>
+            </div>
+                <div class="col-md-2"></div>
+                    <a class="btn btn-dark text-light" data-toggle="collapse" href="#multiCollapseExpo3" role="button" aria-expanded="false" aria-controls="multiCollapseExpo3">Saber más</a>
+                <div class="col-md-7">
+                    <div class="collapse multi-collapse" id="multiCollapseExpo3">
+                        <div class="card card-body">
+                            Esta exposición trata el encuentro pictórico entre un gran pintor, Eugène Delacroix, y un gran escritor, George Gordon Byron, en una época en la que Europa se apasionaba por la independencia de Grecia.
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        <!--
         <div class="exhibition">
             <img src="img/Visit/Expo1.jpg" alt="Exposicion #1" class="exhibition__img">
                 <div class="exhibition__overlay">
@@ -52,7 +133,7 @@
             <p class="exhibition2__subtitle">Escultura renacentista italiana, de Donatello a Miguel Ángel</p>
             <p class="exhibition2__dates">22/12/2020 – 03/07/2021</p>
         </div>
-        <!-------------------------------EXHIBICION #2------------------------------->
+
         <div class="exhibition">
             <img src="img/Visit/Expo2.jpg" alt="Exposicion #1" class="exhibition__img">
                 <div class="exhibition__overlay">
@@ -63,8 +144,8 @@
         <div class="exhibition2">
             <p class="exhibition2__subtitle">Da Vinci, Donatello, Miguel Ángel y Altdorfer.</p>
             <p class="exhibition2__dates">15/09/2020 – 05/07/2021</p>
-        </div>
-        <!-------------------------------EXHIBICION #3------------------------------->
+        </div> 
+
         <div class="exhibition">
             <img src="img/Visit/Expo3.jpg" alt="Exposicion #1" class="exhibition__img">
                 <div class="exhibition__overlay">
@@ -76,6 +157,7 @@
             <p class="exhibition2__subtitle">"El Giaour" de Lord Byron visto por Delacroix.</p>
             <p class="exhibition2__dates">03/12/2020 – 01/10/2021</p>
         </div>
+        -->
     </div>
 
     <!--SECCIÓN 2: Footer-->
@@ -107,6 +189,9 @@
                 </div>
         </div>
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
