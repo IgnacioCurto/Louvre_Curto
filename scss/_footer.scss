@@ -24,10 +24,11 @@ footer{
 }
 
 .footer h4{
+    color: $color-lightBrown;
     font-family: $base-font-family;
     font-size: 22px;
-  }
-  .footer p{
+}
+.footer p{
     font-family: $secondary-font-family;
     font-weight: lighter;
 }
