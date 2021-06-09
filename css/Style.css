@@ -94,7 +94,7 @@ nav {
   text-transform: uppercase;
   color: #e6e6e6; }
 
-/*-------Grid-------*/
+
 .index .col {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -181,7 +181,7 @@ nav {
       object-fit: cover;
       display: block; }
 
-/*-------Obras-------*/
+
 .gallery__Gioconda {
   background-image: url("/img/Browse/Gioconda.jpg");
   grid-column: 1 / 3;
@@ -508,11 +508,11 @@ nav {
   text-transform: uppercase;
   color: #e6e6e6; }
 
-/*Formulario*/
+
 .formulario {
   margin-top: 30px; }
 
-/*Otros medios de contacto*/
+
 .contact__info {
   text-decoration: underline;
   color: #e6e6e6;
@@ -623,7 +623,7 @@ nav {
   opacity: 0;
   transform: scaleY(2);
 }
-  
+
 .hover-img img {
   vertical-align: top;
   max-width: 100%;
@@ -666,7 +666,7 @@ nav {
 }
   
 .hover-img:hover .expo__title {
-    opacity: 1;
+  opacity: 1;
 }
 .expo__info--subtitle{
   font-family: 'Montserrat', sans-serif;
