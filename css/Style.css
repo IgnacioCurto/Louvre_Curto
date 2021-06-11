@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +37,7 @@ span {
   text-align: left; }
 
 .header__menu li a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #e6e6e6;
   margin-top: 30px;
   margin-left: 100px;
@@ -86,14 +85,13 @@ nav {
 
 .index__content h1 {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   font-size: 700%;
   letter-spacing: 8px;
   width: 100%;
   text-transform: uppercase;
   color: #e6e6e6; }
-
 
 .index .col {
   margin-top: 70px;
@@ -105,27 +103,27 @@ nav {
   font-size: 32px;
   text-align: left;
   word-spacing: 2px;
-  margin-left: 30px;
-}
+  margin-left: 30px; }
+
 .index .col img {
+  width: 90%;
   margin-right: 10px;
   border-radius: 3%;
   box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
-  transition: .6s ease-in-out;
+  transition: .4s ease-in-out;
   align-self: center; }
 
 .index .col img:hover {
   transform: scale(0.98); }
 
 .par {
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 200;
   color: #e6e6e6;
   text-align: left;
   font-size: 33px;
-  word-spacing: 2px;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 30px; }
@@ -159,7 +157,7 @@ nav {
 
 .browse__content h2 {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   font-size: 500%;
   letter-spacing: 8px;
@@ -181,202 +179,268 @@ nav {
       object-fit: cover;
       display: block; }
 
-
+/*-------Obras-------*/
 .gallery__Gioconda {
   background-image: url("/img/Browse/Gioconda.jpg");
   grid-column: 1 / 3;
   grid-row:1 / 6;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Gioconda:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Bodas {
   background-image: url("/img/Browse/Bodas.jpg");
   grid-column: 3 / 5;
   grid-row: 1 / 3;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Bodas:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Balsa {
   background-image: url("/img/Browse/Balsa.jpg");
   grid-column: 5 / 9;
   grid-row: 1 / 6;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Balsa:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Libertad {
   background-image: url("/img/Browse/Libertad.jpg");
   grid-column: 3 / 5;
   grid-row: 3 / 6;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Libertad:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Belle {
   background-image: url("/img/Browse/Belle.jpg");
   grid-column:1 / 3;
   grid-row: 6 / 8;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Belle:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Escriba {
   background-image: url("/img/Browse/Escriba.jpg");
   grid-column: 1 / 3;
   grid-row: 8 / 10;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Escriba:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Venus {
   background-image: url("/img/Browse/Venus.jpg");
   grid-column: 3 / 5;
   grid-row: 6 / 10;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Venus:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Juramento {
   background-image: url("/img/Browse/Juramento.jpg");
   grid-column: 5 / 9;
   grid-row: 6 / 9;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Juramento:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Psique {
   background-image: url("/img/Browse/Psique.jpg");
   grid-column: 5 / 9;
   grid-row: 9 / 10;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Psique:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Encajera {
   background-image: url("/img/Browse/Encajera.jpg");
   grid-column: 1 / 3;
   grid-row: 10 / 12;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Encajera:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Virgen {
   background-image: url("/img/Browse/Virgen.jpg");
   grid-column: 3 / 6;
   grid-row: 10 / 12;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Virgen:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Batallas {
   background-image: url("/img/Browse/Batallas.jpg");
   grid-column: 6 / 9;
   grid-row: 10 / 10;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Batallas:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Minerva {
   background-image: url("/img/Browse/Minerva.jpg");
   grid-column: 6 / 9;
   grid-row: 11 / 12;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Minerva:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__David {
   background-image: url("/img/Browse/David.jpg");
   grid-column: 1 / 5;
   grid-row: 12 / 15;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__David:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Concierto {
   background-image: url("/img/Browse/Concierto.jpg");
   grid-column: 5 / 9;
   grid-row: 12 / 15;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Concierto:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Marcellus {
   background-image: url("/img/Browse/Marcellus.jpg");
   grid-column: 1 / 3;
   grid-row: 15 / 18;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Marcellus:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Spartacus {
   background-image: url("/img/Browse/Spartacus.jpg");
   grid-column: 3 / 5;
   grid-row: 15 / 18;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Spartacus:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
-
+  
 .gallery__Dante {
   background-image: url("/img/Browse/Dante.jpg");
   grid-column: 5 / 9;
   grid-row: 15 / 18;
   transition: .3s ease-in-out;
   filter: grayscale(1); }
-
+  
 .gallery__Dante:hover {
+  transform: scale(1.03);
+  filter: grayscale(0); }
+
+.gallery__Akhenaton {
+  background-image: url("/img/Browse/Akhenaton.jpg");
+  transition: .3s ease-in-out;
+  grid-column: 1 / 3;
+  grid-row: 18 / 20;
+  filter: grayscale(1); }
+
+.gallery__Akhenaton:hover {
+  transform: scale(1.03);
+  filter: grayscale(0); }
+
+.gallery__Horus {
+  background-image: url("/img/Browse/Horus.jpg");
+  transition: .3s ease-in-out;
+  grid-column: 3 / 5;
+  grid-row: 18 / 19;
+  filter: grayscale(1); }
+
+.gallery__Horus:hover {
+  transform: scale(1.03);
+  filter: grayscale(0); }
+
+.gallery__Sarcofagos {
+  background-image: url("/img/Browse/Sarcofagos.jpg");
+  transition: .3s ease-in-out;
+  grid-column: 3 / 5;
+  grid-row: 19 / 20;
+  filter: grayscale(1); }
+
+.gallery__Sarcofagos:hover {
+  transform: scale(1.03);
+  filter: grayscale(0); }
+
+.gallery__Mummy {
+  background-image: url("/img/Browse/Mummy.jpg");
+  transition: .3s ease-in-out;
+  grid-column: 5 / 9;
+  grid-row: 18 / 19;
+  filter: grayscale(1); }
+
+.gallery__Mummy:hover {
+  transform: scale(1.03);
+  filter: grayscale(0); }
+
+.gallery__Taureau {
+  background-image: url("/img/Browse/Taureau.jpg");
+  transition: .3s ease-in-out;
+  grid-column: 5 / 6;
+  grid-row: 19 / 20;
+  filter: grayscale(1); }
+
+.gallery__Taureau:hover {
+  transform: scale(1.03);
+  filter: grayscale(0); }
+
+.gallery__Esfinge {
+  background-image: url("/img/Browse/Esfinge.jpg");
+  transition: .3s ease-in-out;
+  grid-column: 6 / 9;
+  grid-row: 19 / 20;
+  filter: grayscale(1); }
+
+.gallery__Esfinge:hover {
   transform: scale(1.03);
   filter: grayscale(0); }
 
@@ -400,7 +464,7 @@ nav {
 
 .shop__content h2 {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   font-size: 500%;
   letter-spacing: 8px;
@@ -444,15 +508,15 @@ nav {
 
 .shop .shop__descripcion {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   grid-row: 2; }
 
 .shop .shop__precio {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   grid-row: 3; }
 
 .shop button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #e6e6e6;
   background-color: #c5a88054;
   grid-row: 4;
@@ -470,7 +534,7 @@ nav {
   color: #c5a880; }
 
 .shop__inc {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #e6e6e6;
   margin-bottom: 30px; }
 
@@ -500,7 +564,7 @@ nav {
 
 .contact__content h2 {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   font-size: 500%;
   letter-spacing: 8px;
@@ -508,11 +572,11 @@ nav {
   text-transform: uppercase;
   color: #e6e6e6; }
 
-
+/*Formulario*/
 .formulario {
   margin-top: 30px; }
 
-
+/*Otros medios de contacto*/
 .contact__info {
   text-decoration: underline;
   color: #e6e6e6;
@@ -522,11 +586,11 @@ nav {
   margin-bottom: 45px;
   margin-left: 30%;
   width: 50%;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .contact__title {
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #c5a880;
   text-align: left;
   margin-left: 30%;
@@ -534,7 +598,7 @@ nav {
   margin-top: 50px; }
 
 .contact__subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #e6e6e6;
   text-align: left;
   margin-left: 30%;
@@ -563,7 +627,7 @@ nav {
 
 .visit__content h2 {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   font-size: 500%;
   letter-spacing: 8px;
@@ -571,6 +635,7 @@ nav {
   text-transform: uppercase;
   color: #e6e6e6; }
 
+/*Intro*/
 .expo {
   color: #e6e6e6;
   margin-left: 20px;
@@ -580,19 +645,18 @@ nav {
   text-align: left;
   font-size: 20px; }
 
-.expo__container{
+.expo__container {
   box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
-  background: rgba( 197, 168, 128, 0.05 );
+  background: rgba(197, 168, 128, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.062);
   border-radius: 10px;
   width: 100%;
   margin-bottom: 90px;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .hover-img {
   margin: 8px;
@@ -601,13 +665,11 @@ nav {
   overflow: hidden;
   position: relative;
   text-align: center;
-  width: 100%;
-}
+  width: 100%; }
 
 .hover-img * {
   box-sizing: border-box;
-  transition: all 0.45s ease;
-}
+  transition: all 0.45s ease; }
 
 .hover-img:before,
 .hover-img:after {
@@ -621,23 +683,20 @@ nav {
   transition: all 0.3s ease;
   z-index: 1;
   opacity: 0;
-  transform: scaleY(2);
-}
+  transform: scaleY(2); }
 
 .hover-img img {
   vertical-align: top;
   max-width: 100%;
-  backface-visibility: hidden;
-}
+  backface-visibility: hidden; }
 
-.expo__title h3{
+.expo__title h3 {
   color: #c5a880;
   font-size: 60px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .hover-img .expo__title {
   position: absolute;
@@ -652,35 +711,31 @@ nav {
   line-height: 1.1em;
   opacity: 0;
   z-index: 2;
-  transition-delay: 0.1s;
-}
-  
+  transition-delay: 0.1s; }
+
 .hover-img:hover:before,
 .hover-img:hover:after {
   transform: scale(1);
-  opacity: 1;
-}
-  
+  opacity: 1; }
+
 .hover-img:hover > img {
-  opacity: 0.7;
-}
-  
+  opacity: 0.7; }
+
 .hover-img:hover .expo__title {
-  opacity: 1;
-}
-.expo__info--subtitle{
+  opacity: 1; }
+
+.expo__info--subtitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
   word-spacing: 2px;
-  color: #c5a880;
-}
-.expo__info--date{
+  color: #c5a880; }
+
+.expo__info--date {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   font-size: 20px;
   word-spacing: 2px;
-  color: #e6e6e6;
-}
+  color: #e6e6e6; }
 
 footer {
   width: 100%; }
@@ -702,11 +757,11 @@ footer {
 
 .footer h4 {
   color: #c5a880;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px; }
 
 .footer p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: lighter; }
 
 .footer__col1 {
@@ -748,10 +803,3 @@ footer {
 .row2 label {
   margin-left: 20px;
   max-width: 150px; }
-
-
-
-
-
-
-

@@ -53,7 +53,7 @@
 }
 /*-------Obras-------*/
 
-@each $artwork in Gioconda, Bodas, Balsa, Libertad, Belle, Escriba, Venus, Juramento, Psique, Encajera, Virgen, Batallas, Minerva, David, Concierto, Marcellus, Spartacus, Dante {
+@each $artwork in Gioconda, Bodas, Balsa, Libertad, Belle, Escriba, Venus, Juramento, Psique, Encajera, Virgen, Batallas, Minerva, David, Concierto, Marcellus, Spartacus, Dante, Akhenaton, Horus, Sarcofagos, Mummy, Taureau, Esfinge {
     .gallery__#{$artwork} {
         background-image: url('/img/Browse/#{$artwork}.jpg');
         transition: .3s ease-in-out;
@@ -61,6 +61,7 @@
     }
     .gallery__#{$artwork}:hover {
         transform: scale(1.03);
-        filter: grayscale(0); }
+        filter: grayscale(0); 
+    }
 }
-/*Luego de aplicar este @each falta asignarle a cada obra una posición en la grilla
+//Luego de aplicar este @each falta asignarle a cada obra una posición en la grilla
