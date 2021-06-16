@@ -33,8 +33,8 @@
     }
 
 .index .col {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     color: #e6e6e6;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
@@ -42,28 +42,17 @@
     font-size: 32px;
     text-align: left;
     word-spacing: 2px;
-    margin-left: 30px;
 }
 .index .col img {
-    width: 90%;
-    margin-right: 10px;
-    border-radius: 3%;
-    box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
-    backdrop-filter: blur(12.5px);
-    -webkit-backdrop-filter: blur(12.5px);
-    transition: .4s ease-in-out;
-    align-self: center; }
+    width: 100%;
+    border-radius: 15px;}
 
-.index .col img:hover {
-    transform: scale(0.98); }
 .par{
     font-family: $secondary-font-family;
     font-weight: 200;
     color: $color-white;
     text-align: left;
-    font-size: 33px;
-    margin-left: 10%;
-    margin-right: 10%;
+    font-size: 32px;
     margin-top: 30px;
 }
 .par a{
@@ -72,4 +61,35 @@
 }
 .carousel{
     box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
+}
+
+.index__card{
+    margin-top: 10px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.438);
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    transition: .4s ease;
+}
+
+.index__card:hover{
+    transform: scale(1.05);
+    background: #ccac7e86;
+}
+
+
+.index__card img{
+    margin-top: 15px;
+    width: 100%;
+}
+.index__card--description{
+    font-size: 20px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    background-color: $color-darkBlue;
+    text-align: center;
+    font-family: $base-font-family;
+    color: $color-white;
 }
