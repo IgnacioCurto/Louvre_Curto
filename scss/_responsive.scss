@@ -11,6 +11,40 @@
 }
     /*----------------------Pantallas pequeñas a medianas-----------*/
 @media (max-width: 768px) {
+    .header__logo {
+        position: inherit;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 15%; }
+    .header__menu {
+        padding-top: 20px;
+        font-size: 20px;
+        display: flex;
+        column-gap: 15px;
+        width: 100%;
+        flex-direction: row; }
+    .header__menu li {
+        margin: 0;
+        text-align: center; }
+    .header__menu a{
+        margin-right: 0;
+    }
+    .header__menu li a {
+        margin: 1px;
+        width: fit-content;
+        padding: 5px; }
+    nav{
+        padding-bottom: 20px;
+    }
+/*------INDEX------*/
+    .index__content{
+        max-width: 100%;
+        margin-left: 2rem;
+    }
+    .index__content h1{
+        text-align: left;
+    }
 }
     /*----------------------Pantallas pequeñas a extra pequeñas-----------*/
 @media (max-width: 576px) {
