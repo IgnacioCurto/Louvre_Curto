@@ -69,10 +69,55 @@
         width: 100%;
     }
     .index .col img{
-        display: none; }
-
+        display: none;
+    }
+    .par{
+        font-size: 25px;
+    }
+    .index__card{
+        margin-left: 15px;}
 
     .footer{
         display: none;
     }
+/*------SHOP------*/
+    .shop__content{
+        max-width: 100%;
+        margin-left: 2rem;
+    }
+    .shop__content h2{
+        letter-spacing: normal;
+        max-width: 100%;
+        font-size: 300%;
+    }
+    .shop{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+/*------CONTACT------*/
+    .contact__content{
+        max-width: 100%;
+        margin-left: 2rem;
+    }
+    .contact__content h2{
+        letter-spacing: normal;
+        max-width: 100%;
+        font-size: 300%;
+    }
+    .contact__title{
+        margin-left: 5%;
+        font-size: 25px;
+        letter-spacing: normal;
+    }
+    .contact__info{
+        margin-left: 5%;
+        width:80%;
+    }
+    .contact__subtitle{
+        margin-left: 5%;
+        width: 80%;
+    }
+
+
 }
