@@ -78,7 +78,9 @@
 .shop button {
     font-family: $base-font-family;
     color: $color-white;
-    background-color: #c5a88054;
+    border: 1px solid #c5a8809f;
+    background: none;
+    color: #c5a8809f;
     grid-row: 4;
     padding: 8px;
     border-radius: 10px;
