@@ -99,7 +99,7 @@ nav {
   margin-top: 40px;
   margin-bottom: 40px;
   color: #e6e6e6;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: lighter;
   align-self: center;
   font-size: 32px;
@@ -112,11 +112,12 @@ nav {
 
 .par {
   font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-weight: lighter;
   color: #e6e6e6;
   text-align: left;
   font-size: 32px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  word-spacing: 2px; }
 
 .par a {
   text-decoration: none;
@@ -874,12 +875,14 @@ nav {
 /*Intro*/
 .expo {
   color: #e6e6e6;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
   margin-left: 20px;
   margin-right: 100px;
   margin-top: 20px;
   margin-bottom: 30px;
   text-align: left;
-  font-size: 20px; }
+  font-size: 25px; }
 
 .expo__container {
   box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
@@ -888,7 +891,7 @@ nav {
   background: rgba(197, 168, 128, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.062);
   border-radius: 10px;
-  width: 100%;
+  max-width: 99%;
   margin-bottom: 90px;
   display: flex;
   align-items: center;
@@ -1043,10 +1046,19 @@ footer {
 
 /*=================================================Mobile Responsive=================================================*/
 /*----------------------Pantallas grandes a extra grandes-----------*/
+@media (min-width: 992px) {
+  .header__logo {
+    margin-left: 2%; } }
+
 /*----------------------Pantallas medianas a grandes-----------*/
+@media (max-width: 992px) {
+  .header__logo {
+    margin-left: 2%; } }
+
 /*----------------------Pantallas pequeñas a medianas-----------*/
 @media (max-width: 768px) {
   .header__logo {
+    margin-left: 2%;
     position: inherit;
     display: block;
     margin-left: auto;
@@ -1101,7 +1113,7 @@ footer {
     float: none;
     font-size: 12px;
     display: flex;
-    column-gap: 15px;
+    column-gap: 5px;
     width: 100%;
     flex-direction: row; }
   .header__menu li {
@@ -1142,7 +1154,10 @@ footer {
     max-width: 100%;
     margin-left: 2rem; }
   .shop__content h2 {
+    font-weight: lighter;
     letter-spacing: normal;
+    margin-top: 2%;
+    margin-bottom: 2%;
     max-width: 100%;
     font-size: 300%; }
   .shop {

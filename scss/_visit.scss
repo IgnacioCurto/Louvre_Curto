@@ -36,13 +36,15 @@
 
 /*Intro*/
 .expo {
-    color: #e6e6e6;
+    color: $color-white;
+    font-family: $secondary-font-family;
+    font-weight: lighter;
     margin-left: 20px;
     margin-right: 100px;
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: left;
-    font-size: 20px; }
+    font-size: 25px; }
 
 .expo__container{
     box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
@@ -51,7 +53,7 @@
     background: rgba( 197, 168, 128, 0.05 );
     border: 1px solid rgba(255, 255, 255, 0.062);
     border-radius: 10px;
-    width: 100%;
+    max-width: 99%;
     margin-bottom: 90px;
     display: flex;
     align-items: center;
