@@ -884,15 +884,14 @@ nav {
   text-align: left;
   font-size: 25px; }
 
-.expo__container {
+.expo__container--row {
   box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
   background: rgba(197, 168, 128, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.062);
   border-radius: 10px;
-  max-width: 99%;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -932,7 +931,7 @@ nav {
 .expo__title h3 {
   color: #c5a880;
   font-size: 60px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
   text-transform: uppercase; }
