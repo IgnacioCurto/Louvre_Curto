@@ -1087,6 +1087,7 @@ footer {
     max-width: 100%;
     margin-left: 2rem; }
   .index__content h1 {
+    font-size: 500%;
     text-align: left; } }
 
 /*----------------------Pantallas pequeñas a extra pequeñas-----------*/
@@ -1130,7 +1131,7 @@ footer {
     max-width: 100%;
     margin-left: 2rem; }
   .index__content h1 {
-    font-size: 400%; }
+    font-size: 300%; }
   .index .col {
     text-align: left;
     margin-left: 15px;
@@ -1154,6 +1155,7 @@ footer {
     max-width: 100%;
     margin-left: 2rem; }
   .shop__content h2 {
+    font-family: "Montserrat", sans-serif;
     font-weight: lighter;
     letter-spacing: normal;
     margin-top: 2%;
@@ -1169,6 +1171,8 @@ footer {
     max-width: 100%;
     margin-left: 2rem; }
   .contact__content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
     letter-spacing: normal;
     max-width: 100%;
     font-size: 300%; }
@@ -1181,4 +1185,18 @@ footer {
     width: 80%; }
   .contact__subtitle {
     margin-left: 5%;
-    width: 80%; } }
+    width: 80%; }
+  /*------Visit------*/
+  .visit__content {
+    max-width: 100%;
+    margin-left: 2rem; }
+  .visit__content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    letter-spacing: normal;
+    max-width: 100%;
+    font-size: 300%; }
+  .expo {
+    font-size: 20px; }
+  .expo__container {
+    margin: auto; } }
