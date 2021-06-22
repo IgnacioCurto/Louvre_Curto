@@ -42,7 +42,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 75px; }
+    grid-row-gap: 55px; }
 
 .shop .shop__producto {
     background: rgba( 255, 255, 255, 0.05 );
@@ -63,7 +63,8 @@
 
 
 .shop img {
-    max-width: 100%;
+    margin: 15px;
+    max-width: 80%;
     grid-row: 1; }
 
 .shop .shop__descripcion {
@@ -78,6 +79,7 @@
 .shop button {
     font-family: $base-font-family;
     color: $color-white;
+    margin-bottom: 10px;
     border: 1px solid #c5a8809f;
     background: none;
     color: #c5a8809f;

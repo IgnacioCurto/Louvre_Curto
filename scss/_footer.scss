@@ -19,7 +19,7 @@ footer{
     display: flex;
     margin: auto;
     max-width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
@@ -50,6 +50,9 @@ footer{
 .footer__col2-row{
     flex-direction: row;
     justify-content: space-between;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.89);
+    border-radius: 10px;
 }
 .footer__col2 img{
     margin: 10px;
@@ -57,6 +60,7 @@ footer{
     height: 30px;
     transition: .1s ease;
 }
+
 .footer__col2 img:hover{
     transform: scale(1.10);
 }
@@ -79,8 +83,10 @@ footer{
     max-width: 150px;
 }
 
-
-
+.vl{
+    border-right: 2px solid #13141a;
+    height: 140px;
+}
 
 
 

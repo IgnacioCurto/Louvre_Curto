@@ -14,6 +14,31 @@
     .header__logo{
         margin-left: 2%;
     }
+    .index-col {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .index-col::after {
+        content: "";
+        background-image: url('../img/Index/Victoria.png');
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+    }
+    .index .col img{
+        display: none;
+    }
+
 }
     /*----------------------Pantallas pequeñas a medianas-----------*/
 @media (max-width: 768px) {
@@ -53,6 +78,31 @@
         font-size: 500%;
         text-align: left;
     }
+    .index-col {
+        display: block;
+        position: relative;
+    }
+    .index-col::after {
+        content: "";
+        background-image: url('../img/Index/Victoria.png');
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+    }
+    .index .col img{
+        display: none;
+    }
+
+    /*background-image: url('../img/Index/Victoria.png');*/
 }
     /*----------------------Pantallas pequeñas a extra pequeñas-----------*/
 @media (max-width: 576px) {
@@ -99,7 +149,7 @@
     .index__content h1{
         font-size: 300%;
     }
-    .index .col {
+    .index-col {
         text-align: left;
         margin-left: 15px;
         margin-right: 15px;
@@ -109,10 +159,12 @@
         margin-bottom: 5px;
         font-size: 24px;
         width: 100%;
+        background: none;
     }
     .index .col img{
         display: none;
     }
+
     .par{
         font-size: 25px;
     }

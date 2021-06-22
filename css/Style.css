@@ -5,8 +5,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #1e212d;
-  background: linear-gradient(345deg, #1e212d 37%, #1d1614 100%);
+  background: #141720;
+  background: linear-gradient(180deg, #141720 0%, #1e212d 25%, #251915 100%);
   font-family: 'Montserrat', sans-serif;
   color: #e6e6e6; }
 
@@ -95,7 +95,7 @@ nav {
   text-transform: uppercase;
   color: #e6e6e6; }
 
-.index .col {
+.index-col {
   margin-top: 40px;
   margin-bottom: 40px;
   color: #e6e6e6;
@@ -718,7 +718,7 @@ nav {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 30px;
-  grid-row-gap: 75px; }
+  grid-row-gap: 55px; }
 
 .shop .shop__producto {
   background: rgba(255, 255, 255, 0.05);
@@ -738,7 +738,8 @@ nav {
   transform: scale(0.95); }
 
 .shop img {
-  max-width: 100%;
+  margin: 15px;
+  max-width: 80%;
   grid-row: 1; }
 
 .shop .shop__descripcion {
@@ -753,6 +754,7 @@ nav {
 .shop button {
   font-family: "Montserrat", sans-serif;
   color: #e6e6e6;
+  margin-bottom: 10px;
   border: 1px solid #c5a8809f;
   background: none;
   color: #c5a8809f;
@@ -990,7 +992,7 @@ footer {
   display: flex;
   margin: auto;
   max-width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 20px; }
 
 .footer h4 {
@@ -1017,7 +1019,10 @@ footer {
 
 .footer__col2-row {
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.89);
+  border-radius: 10px; }
 
 .footer__col2 img {
   margin: 10px;
@@ -1043,6 +1048,10 @@ footer {
   margin-left: 20px;
   max-width: 150px; }
 
+.vl {
+  border-right: 2px solid #13141a;
+  height: 140px; }
+
 /*=================================================Mobile Responsive=================================================*/
 /*----------------------Pantallas grandes a extra grandes-----------*/
 @media (min-width: 992px) {
@@ -1052,7 +1061,28 @@ footer {
 /*----------------------Pantallas medianas a grandes-----------*/
 @media (max-width: 992px) {
   .header__logo {
-    margin-left: 2%; } }
+    margin-left: 2%; }
+  .index-col {
+    display: block;
+    position: relative;
+    width: 100%; }
+  .index-col::after {
+    content: "";
+    background-image: url("../img/Index/Victoria.png");
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px; }
+  .index .col img {
+    display: none; } }
 
 /*----------------------Pantallas pequeñas a medianas-----------*/
 @media (max-width: 768px) {
@@ -1087,7 +1117,28 @@ footer {
     margin-left: 2rem; }
   .index__content h1 {
     font-size: 500%;
-    text-align: left; } }
+    text-align: left; }
+  .index-col {
+    display: block;
+    position: relative; }
+  .index-col::after {
+    content: "";
+    background-image: url("../img/Index/Victoria.png");
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px; }
+  .index .col img {
+    display: none; }
+  /*background-image: url('../img/Index/Victoria.png');*/ }
 
 /*----------------------Pantallas pequeñas a extra pequeñas-----------*/
 @media (max-width: 576px) {
@@ -1131,7 +1182,7 @@ footer {
     margin-left: 2rem; }
   .index__content h1 {
     font-size: 300%; }
-  .index .col {
+  .index-col {
     text-align: left;
     margin-left: 15px;
     margin-right: 15px;
@@ -1140,7 +1191,8 @@ footer {
     margin-top: 30px;
     margin-bottom: 5px;
     font-size: 24px;
-    width: 100%; }
+    width: 100%;
+    background: none; }
   .index .col img {
     display: none; }
   .par {
