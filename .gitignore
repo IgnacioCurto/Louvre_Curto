@@ -1,5 +1,2 @@
-# Ignora carpeta oculta del sistema Mac 
-.DS_store
-
-# Ignora la carpeta node_modules
-Louvre_Curto/node_modules
+# Ignora la carpeta node_modules y archivo de mac
+Louvre_Curto/node_modules .DS_Store
