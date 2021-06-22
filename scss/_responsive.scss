@@ -38,6 +38,10 @@
     .index .col img{
         display: none;
     }
+    /*
+    .footer__col2{
+        align-items: center;
+    }*/
 
 }
     /*----------------------Pantallas pequeñas a medianas-----------*/
@@ -97,12 +101,43 @@
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 10px;
+        background-position: center;
     }
     .index .col img{
         display: none;
     }
+/*------Footer------*/
+    .footer{
+        justify-content: space-between;
+    }
+    .footer h4{
+        font-size: 18px;
+    }
+    .footer__col2{
+        margin: 10px;
+    }
+    .footer__col2-row{
+        justify-content: center;
+        padding-left: 18px;
+    }
+    .footer__col2 img{
+        margin: 2px;
+        width: 24px;
+        height: 24px;
+    }
+    .row2 label{
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    .footer__col3{
+        max-width: 200px;
+        margin-left: 10px;
+    }
+    .vl{
+        margin-top: 8%;
+    }
 
-    /*background-image: url('../img/Index/Victoria.png');*/
+
 }
     /*----------------------Pantallas pequeñas a extra pequeñas-----------*/
 @media (max-width: 576px) {
@@ -166,14 +201,10 @@
     }
 
     .par{
-        font-size: 25px;
+        font-size: 23px;
     }
     .index__card{
         margin-left: 15px;}
-
-    .footer{
-        display: none;
-    }
 /*------SHOP------*/
     .shop__content{
         max-width: 100%;
@@ -235,5 +266,37 @@
     }
     .expo__container{
         margin: auto;
+    }
+/*------Visit------*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+    }
+    .footer h4{
+        font-size: 15px;
+    }
+    .footer p{
+        font-size: 10px;
+    }
+    .footer__col1{
+        margin-left: 10px;
+    }
+    .footer__col2-row{
+        padding-left: 5px;
+        border: none;
+    }
+
+    .footer__col2 img{
+        margin: 10px;
+        width: 24px;
+        height: 24px;
+    }
+    .row2 label{
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    .vl{
+        display: none;
     }
 }
