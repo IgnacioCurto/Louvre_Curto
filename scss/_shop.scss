@@ -89,9 +89,9 @@
     transition: .2s ease-in-out; }
 
 .shop button:hover {
+    color: $color-darkBlue;
     transform: scale(1.05);
-    color: $color-lightBrown;
-    background-color: #1e212d; }
+    background-color: $color-lightBrown; }
 
 .shop__contact {
     text-decoration: underline;

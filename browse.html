@@ -16,6 +16,7 @@
     content="ARTE,GIOCONDA,VENUS">
 </head>
 <body>
+    <scroll-page id="galeria"></scroll-page>
     <!--Encabezado fijo-->
     <header>
         <a href="index.html"><img class="header__logo" src="img/Logo.png" alt="Logo"></a>
@@ -28,8 +29,7 @@
             </ul>
         </nav>
     </header>
-    
-    <main> 
+
     <!--SECCIÓN 1: Landing-->
     <section class="browse__landing">
         <section class="browse__landing-inner">
@@ -38,6 +38,7 @@
             </div>
         </section>
     </section>
+
     <!--SECCIÓN 2: Galería-->
         <!--Piezas ordenadas en grid-->
         <div class="containerBrowse">
@@ -52,7 +53,7 @@
                     <img src="img/Browse/Balsa.jpg" alt="La balsa de la Medusa" class="gallery__artwork">
                 </figure>
                 <figure class="gallery__Libertad">
-                    <img src="img/Browse/Libertad.jpg" alt="La Libertad guiando el pueblo" class="gallery__artwork">
+                    <img src="img/Browse/Libertad.png" alt="La Libertad guiando el pueblo" class="gallery__artwork">
                 </figure>
                 <figure class="gallery__Belle">
                     <img src="img/Browse/Belle.jpg" alt="La Belle" class="gallery__artwork">
@@ -114,8 +115,10 @@
                 <figure class="gallery__Esfinge">
                     <img src="img/Browse/Esfinge.png" alt="Esfinge" class="gallery__artwork">
                 </figure>
+                <a href="#galeria" id="sticky">Volver arriba</a>
             </div>
         </div>
+        
 
     <!--SECCIÓN 3: Footer-->
     <footer>
@@ -154,3 +157,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+<!--@each $artwork in Gioconda, Bodas, Balsa, Libertad, Belle, Escriba, Venus, Juramento, Psique, Encajera, Virgen, Batallas, Minerva, David, Concierto, Marcellus, Spartacus, Dante, Akhenaton, Horus, Sarcofagos, Mummy, Taureau, Esfinge {
+    .gallery__#{$artwork} {
+        background-image: url('/img/Browse/#{$artwork}.jpg');
+        transition: .3s ease-in-out;
+        filter: grayscale(1);
+    }
+    .gallery__#{$artwork}:hover {
+        transform: scale(1.03);
+        filter: grayscale(0); 
+    }
+}-->
