@@ -235,17 +235,17 @@
     opacity: 1;
 }
 .expo__info--subtitle{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $base-font-family;
     font-weight: lighter;
     word-spacing: 2px;
-    color: #c5a880;
+    color: $color-lightBrown;
 }
 .expo__info--date{
-    font-family: 'Roboto', sans-serif;
+    font-family: $secondary-font-family;
     font-weight: lighter;
     font-size: 20px;
     word-spacing: 2px;
-    color: #e6e6e6;
+    color: $color-white;
 }
 
 
