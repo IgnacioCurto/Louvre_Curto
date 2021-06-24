@@ -8,6 +8,10 @@
     padding: 0;
     box-sizing: border-box; }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgb(20,23,32);
     background: linear-gradient(180deg, rgba(20,23,32,1) 0%, rgba(30,33,45,1) 25%, rgba(37,25,21,1) 100%);

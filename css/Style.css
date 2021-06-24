@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background: #141720;
   background: linear-gradient(180deg, #141720 0%, #1e212d 25%, #251915 100%);
@@ -875,6 +878,53 @@ nav {
   color: #e6e6e6; }
 
 /*Intro*/
+.ubicacion_container h3 {
+  color: #c5a880;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 2px; }
+
+.ubicacion p {
+  color: #e6e6e6;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: left; }
+
+.map {
+  width: 100%;
+  transition: .4s ease; }
+
+.map:hover {
+  transform: scale(1.05); }
+
+.entrada {
+  background: #c5a8805d;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: .2s ease; }
+
+.entrada:hover {
+  color: #c5a880;
+  background: #1E212D;
+  transform: scale(1.05);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+.visit__list {
+  margin-top: 5%; }
+
 .expo {
   color: #e6e6e6;
   font-family: "Roboto", sans-serif;
@@ -884,7 +934,7 @@ nav {
   margin-top: 20px;
   margin-bottom: 30px;
   text-align: left;
-  font-size: 25px; }
+  font-size: 23px; }
 
 .expo__container--row {
   box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
@@ -1175,7 +1225,9 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    min-width: 15%; }
+    width: 80px;
+    height: 50px;
+    min-width: 10%; }
   nav {
     padding-bottom: 0; }
   header {
