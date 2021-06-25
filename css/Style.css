@@ -69,6 +69,8 @@ li {
 nav {
   padding-bottom: 100px; }
 
+/*=======================================INDEX=======================================*/
+/*--Landing--*/
 .index__landing {
   width: 100%;
   height: 70%;
@@ -98,6 +100,7 @@ nav {
   text-transform: uppercase;
   color: #e6e6e6; }
 
+/*--Texto e imagen principal--*/
 .index-col {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -113,6 +116,10 @@ nav {
   width: 100%;
   border-radius: 15px; }
 
+.carousel {
+  box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37); }
+
+/*--Texto secundario--*/
 .par {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
@@ -126,8 +133,9 @@ nav {
   text-decoration: none;
   color: #c5a880; }
 
-.carousel {
-  box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37); }
+/*--Previews/links a otras secciones--*/
+.index__card--container {
+  margin-bottom: 3%; }
 
 .index__card {
   margin-top: 10px;
@@ -157,6 +165,8 @@ nav {
   font-family: "Montserrat", sans-serif;
   color: #e6e6e6; }
 
+/*=======================================EXPLORAR=======================================*/
+/*--Landing--*/
 .browse__landing {
   width: 100%;
   height: 70%;
@@ -187,6 +197,7 @@ nav {
   text-transform: uppercase;
   color: #e6e6e6; }
 
+/*-----------GALERIA-----------*/
 .containerBrowse {
   width: 98%;
   margin: 2rem auto; }
@@ -200,31 +211,6 @@ nav {
       height: 100%;
       object-fit: cover;
       display: block; }
-
-#sticky {
-  background: #c5a8801c;
-  box-shadow: 0 8px 32px 0 rgba(44, 44, 44, 0.37);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 50px;
-  position: sticky;
-  width: 90px;
-  height: 90px;
-  bottom: 40px;
-  left: 90%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
-  text-decoration: none;
-  transition: .3s ease; }
-
-#sticky:hover {
-  background-color: #c5a8803d;
-  transform: scale(1.05); }
 
 /*-------Obras-------*/
 .gallery__Gioconda {
@@ -467,6 +453,34 @@ nav {
   transform: scale(1.03);
   filter: grayscale(0); }
 
+/*--Botón para volver arriba--*/
+#sticky {
+  background: #c5a8801c;
+  box-shadow: 0 8px 32px 0 rgba(44, 44, 44, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+  position: sticky;
+  width: 90px;
+  height: 90px;
+  bottom: 40px;
+  left: 90%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  transition: .3s ease; }
+
+#sticky:hover {
+  background-color: #c5a8803d;
+  transform: scale(1.05); }
+
+/*=======================================SHOP=======================================*/
+/*--Landing--*/
 .shop__landing {
   width: 100%;
   height: 80%;
@@ -495,6 +509,7 @@ nav {
   text-transform: uppercase;
   color: #e6e6e6; }
 
+/*--Comienza la grilla de la tienda--*/
 .shop {
   padding: 1.8rem 0;
   margin-top: 30px;
@@ -555,19 +570,19 @@ nav {
   transform: scale(1.05);
   background-color: #c5a880; }
 
-.shop__contact {
-  text-decoration: underline;
-  color: #c5a880; }
-
+/*--Inconveniente--*/
 .shop__inc {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #e6e6e6;
+  font-weight: lighter;
   margin-bottom: 30px; }
 
 .shop__inc a {
   text-decoration: none;
   color: #c5a880; }
 
+/*=======================================CONTACTO=======================================*/
+/*--Landing--*/
 .contact__landing {
   width: 100%;
   height: 70%;
@@ -598,11 +613,14 @@ nav {
   text-transform: uppercase;
   color: #e6e6e6; }
 
-/*Formulario*/
+/*--Formulario--*/
 .formulario {
   margin-top: 30px; }
 
-/*Otros medios de contacto*/
+/*--Otros medios de contacto--*/
+.contact {
+  margin-bottom: 3%; }
+
 .contact__info {
   text-decoration: underline;
   color: #e6e6e6;
@@ -631,6 +649,8 @@ nav {
   width: 40%;
   font-size: 17px; }
 
+/*=======================================VISITA=======================================*/
+/*--Landing--*/
 .visit__landing {
   width: 100%;
   height: 80%;
@@ -661,7 +681,7 @@ nav {
   text-transform: uppercase;
   color: #e6e6e6; }
 
-/*Intro*/
+/*--Sección de ubicación--*/
 .ubicacion_container h3 {
   color: #c5a880;
   font-family: "Montserrat", sans-serif;
@@ -685,6 +705,7 @@ nav {
 .map:hover {
   transform: scale(1.05); }
 
+/*Botón 'comprar entradas'*/
 .entradas__btn--container {
   display: flex;
   justify-content: center;
@@ -711,48 +732,7 @@ nav {
   transform: scale(1.05);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
-.entradas__container h3 {
-  color: #c5a880;
-  font-family: "Montserrat", sans-serif;
-  font-size: 35px;
-  text-align: center;
-  margin-top: 20px;
-  letter-spacing: 2px; }
-
-.entradas__list {
-  margin-top: 3%; }
-
-.entradas__container {
-  margin-bottom: 5%; }
-
-.entradas__container h4 {
-  color: #e6e6e6;
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  letter-spacing: 2px;
-  margin-top: 3%;
-  margin-left: 4%; }
-
-.entradas__container li {
-  color: #e6e6e6;
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: lighter;
-  text-align: left;
-  width: 70%; }
-
-.entradas__container h5 {
-  color: #e6e6e6;
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: lighter;
-  text-align: left;
-  width: 70%;
-  margin-left: 10%; }
-
-.entradas__container ul {
-  list-style-type: circle; }
-
+/*----Exposiciones----*/
 .expo {
   color: #e6e6e6;
   font-family: "Roboto", sans-serif;
@@ -854,6 +834,49 @@ nav {
   word-spacing: 2px;
   color: #e6e6e6; }
 
+/*---Sección de compra----*/
+.entradas__container h3 {
+  color: #c5a880;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 2px; }
+
+.entradas__list {
+  margin-top: 3%; }
+
+.entradas__container {
+  margin-bottom: 5%; }
+
+.entradas__container h4 {
+  color: #e6e6e6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-top: 3%;
+  margin-left: 4%; }
+
+.entradas__container li {
+  color: #e6e6e6;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: left;
+  width: 70%; }
+
+.entradas__container h5 {
+  color: #e6e6e6;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: left;
+  width: 70%;
+  margin-left: 10%; }
+
+.entradas__container ul {
+  list-style-type: circle; }
+
 footer {
   width: 100%; }
 
@@ -938,6 +961,7 @@ footer {
 @media (max-width: 992px) {
   .header__logo {
     margin-left: 2%; }
+  /*------INDEX------*/
   .index-col {
     display: block;
     position: relative;
@@ -959,10 +983,11 @@ footer {
     border-radius: 10px; }
   .index .col img {
     display: none; }
-  /*
-    .footer__col2{
-        align-items: center;
-    }*/ }
+  /*------Footer------*/
+  .footer__col3 {
+    display: none; }
+  .vl {
+    display: none; } }
 
 /*----------------------Pantallas pequeñas a medianas-----------*/
 @media (max-width: 768px) {
@@ -1019,6 +1044,15 @@ footer {
     background-position: center; }
   .index .col img {
     display: none; }
+  /*------Shop------*/
+  .shop {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 35px; }
+  .shop p {
+    margin-bottom: 4px; }
+  .shop__inc {
+    font-size: 20px; }
   /*------Footer------*/
   .footer {
     justify-content: space-between; }
@@ -1037,10 +1071,11 @@ footer {
     margin-left: 5px;
     font-size: 15px; }
   .footer__col3 {
+    display: block;
     max-width: 200px;
     margin-left: 10px; }
   .vl {
-    margin-top: 8%; } }
+    display: none; } }
 
 /*----------------------Pantallas pequeñas a extra pequeñas-----------*/
 @media (max-width: 576px) {

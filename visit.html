@@ -11,12 +11,12 @@
     <link rel="icon" href="img/Logo.ico">
     <title>Visitas | Museo del Louvre</title>
     <meta name="description"
-    content="Adéntrate en la historia: Conoce nuestro museo y sus magníficas obras">
+    content="Adéntrate en la historia: Conoce nuestro museo y sus magníficas exposiciones">
     <meta name="keywords"
-    content="VISITA,IR,CONOCER,EXHIBICIONES">
+    content="VISITA,IR,CONOCER,EXHIBICIONES,ENTRADAS">
 </head>
 <body>
-    <!--Encabezado fijo-->
+    <!--Navbar fija-->
     <header>
         <a href="index.html"><img class="header__logo" src="img/Logo.png" alt="Logo"></a>
         <nav>
@@ -29,7 +29,7 @@
         </nav>
     </header>
     
-    <!--SECCIÓN 1: Landing e introducción-->
+    <!--SECCIÓN 1: Landing-->
     <section class="visit__landing">
         <section class="visit__landing-inner">
             <div class="visit__content">
@@ -37,14 +37,17 @@
             </div>
         </section>
     </section>
+
+    <!--SECCIÓN 2: Ubicación y más info-->
     <section class="ubicacion_container">
         <h3>¿Quieres conocer nuestro museo?</h3>
         <div class="ubicacion row w-100 justify-content-center">
-            <div class="col col-10 col-lg-5"><a href="https://www.google.com/maps/place/Museo+del+Louvre/@48.860724,2.334082,15z/data=!4m5!3m4!1s0x0:0xb975fcfa192f84d4!8m2!3d48.8606111!4d2.337644"><img class="map" src="img/Visit/map.png" alt="Dirección"></a></div>
+            <div class="col col-11 col-lg-5"><a href="https://www.google.com/maps/place/Museo+del+Louvre/@48.860724,2.334082,15z/data=!4m5!3m4!1s0x0:0xb975fcfa192f84d4!8m2!3d48.8606111!4d2.337644"><img class="map" src="img/Visit/map.png" alt="Ubicación en el mapa"></a></div>
             <p class="col col-11 col-lg-6">Nos encontramos en el primer distrito de París, a un costado del Sena. Es un emplazamiento central al que se accede con facilidad desde muchas líneas de metro y autobús. <br> Las <span>estaciones de metro</span> más próximas son: Palais Royal – Musée du Louvre (líneas 1 y 7), Louvre-Rivoli (línea 1), Tuileries (línea 1) y Pont-Neuf (línea 7). <br> Las <span>líneas de autobús</span> que puede tomar son las siguientes: 95, 21, 27, 69, 72, 76. <br> También contamos con un <span>aparcamiento subterráneo</span> de 670 plazas distribuidas en 2 pisos justo debajo del Carrusel del Louvre. Se puede entrar a él por la Avenida del Général Lemonnier 75001.</p>
         </div>
     </section>
 
+    <!--Botón que redirige directamente a las opciones de compra-->
     <div class="entradas__btn--container">
         <a href="#entradas"><button class="entradas__btn">Comprar entradas</button></a>
     </div>
@@ -53,14 +56,14 @@
         <!--Breve introducción a las exhibiciones-->
         <p class="expo col col-11 col-lg-10"><span>¿Tienes poco tiempo?</span> O quizás estás escazo de ideas. Visita nuestras exhibiciones programadas para sumergirte en lo más profundo de sus obras e historia:</p>
 
-        <!--SECCIÓN 2: Exposiciones-->
+        <!--SECCIÓN 3: Exposiciones-->
         <!--Se listan las exhibiciones activas-->
 
         <!---------------------EXHIBICION #1------------------------------->
         <section class="container">
             <section class="expo__container--row row w-100 ml-1 ml-md-1">
                 <div class="hover-img col-12 col-md-5">
-                    <img src="img/Visit/Expo1.jpg"/>
+                    <img src="img/Visit/Expo1.jpg" alt="Cuerpo y alma"/>
                     <div class="expo__title">
                         <h3>Cuerpo y alma</h3>
                     </div>
@@ -75,7 +78,7 @@
                 <div class="col-12 col-md-9">
                     <div class="collapse multi-collapse" id="multiCollapseExpo1">
                         <div class="card card-body">
-                            La representación de la figura humana y del movimiento, en sus múltiples facetas, dio lugar a formas muy innovadoras. El estudio de la expresión y de los sentimientos humanos ocupan un eje central en el trabajo de los grandes escultores de este periodo, desde Donatello a uno de los más celebres artistas que ha dado la historia: Miguel Ángel.
+                            La representación de la figura humana y del movimiento, en sus múltiples facetas, dió lugar a formas muy innovadoras. El estudio de la expresión y de los sentimientos humanos ocupan un eje central en el trabajo de los grandes escultores de este período, desde Donatello a uno de los más célebres artistas que ha dado la historia: Miguel Ángel.
                         </div>
                     </div>
                 </div>
@@ -85,7 +88,7 @@
         <section class="container">
             <section class="expo__container--row row w-100 ml-1 ml-md-1">
                 <div class="hover-img col-12 col-md-5">
-                    <img src="img/Visit/Expo2.jpg"/>
+                    <img src="img/Visit/Expo2.jpg" alt="Figura de artista"/>
                     <div class="expo__title">
                         <h3>Figura de artista</h3>
                     </div>
@@ -100,7 +103,7 @@
                 <div class="col-12 col-md-9">
                     <div class="collapse multi-collapse" id="multiCollapseExpo2">
                         <div class="card card-body">
-                            El Renacimiento es el momento en el que el artista afirma su independencia: este empieza a renunciar a su estatus de artesano para reivindicar una determinada plaza dentro de la sociedad. No obstante, el origen de la figura del artista es mucho más antiguo y complejo que lo que las colecciones del Louvre reflejan, ya que en ellas solo vemos ejemplos que van de las primeras firmas realizadas por los artesanos de la Antigüedad a los autorretratos del romanticismo. 
+                            El Renacimiento es el momento en el que el artista afirma su independencia: éste empieza a renunciar a su estatus de artesano para reivindicar una determinada plaza dentro de la sociedad. No obstante, el origen de la figura del artista es mucho más antiguo y complejo que lo que las colecciones del Louvre reflejan, ya que en ellas solo vemos ejemplos que van de las primeras firmas realizadas por los artesanos de la Antigüedad a los autorretratos del romanticismo. 
                         </div>
                     </div>
                 </div>
@@ -111,7 +114,7 @@
         <section class="container">
             <section class="expo__container--row row w-100 ml-1 ml-md-1">
                 <div class="hover-img col-12 col-md-5">
-                    <img src="img/Visit/Expo3.jpg"/>
+                    <img src="img/Visit/Expo3.jpg" alt="Un duelo romántico"/>
                     <div class="expo__title">
                         <h3>Un duelo romántico</h3>
                     </div>
@@ -136,7 +139,7 @@
         <section class="container">
             <section class="expo__container--row row w-100 ml-1 ml-md-1">
                 <div class="hover-img col-12 col-md-5">
-                    <img src="img/Visit/Expo4.jpg"/>
+                    <img src="img/Visit/Expo4.jpg" alt="Vestigios de guerra"/>
                     <div class="expo__title">
                         <h3>Vestigios de guerra</h3>
                     </div>
@@ -162,7 +165,7 @@
         <section class="container">
             <section class="expo__container--row row w-100 ml-1 ml-md-1">
                 <div class="hover-img col-12 col-md-5">
-                    <img src="img/Visit/Expo5.jpg"/>
+                    <img src="img/Visit/Expo5.jpg" alt="Dinámica de oscuridad"/>
                     <div class="expo__title">
                         <h3>Dinámica de oscuridad</h3>
                     </div>
@@ -184,13 +187,14 @@
             </section>
         </section>
     </div>
-        <!------------Opciones de compra para las entradas------------>
-        <scroll-page id="entradas"></scroll-page>
+
+    <!------------Consigue tus entradas------------>
+    <scroll-page id="entradas"></scroll-page>
 
     <section class="entradas__container">
-
         <h3>Consigue tus entradas</h3>
 
+        <!--Se listan las distintas opciones de compra-->
         <div class="entradas__list list-group list-group-flush ml-lg-5 mr-lg-5">
             <a href="" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center bg-dark text-white">
                 Entrada a la colección permanente 
@@ -217,7 +221,7 @@
 
     </section>
 
-    <!--SECCIÓN 3: Footer-->
+    <!--SECCIÓN 4: Footer-->
     <footer>
         <div class="footer__container">
             <div class="footer">
@@ -230,7 +234,7 @@
                     <h4>Redes sociales</h4>
                     <div class="footer__col2-row">
                         <a href="https://www.facebook.com/museedulouvre"><img src="img/Footer/facebook.png" alt="Facebook"></a>
-                        <a href="https://www.instagram.com/museelouvre/"><img src="img/Footer/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.instagram.com/museelouvre/"><img src="img/Footer/instagram.png" alt="Intsagram"></a>
                         <a href="https://twitter.com/museelouvre"><img src="img/Footer/twitter.png" alt="Twitter"></a>
                     </div>
                 </div>
@@ -238,14 +242,15 @@
                 <div class="footer__col3">
                     <h4>Contacto</h4>
                     <div class="row2">
-                        <img src="img/Footer/phone.png" alt="Teléfono de contacto">
+                        <img src="img/Footer/phone.png" alt="Número de contacto">
                         <label>+549341214655</label>
                     </div>
                     <div class="row2">
                         <img src="img/Footer/mail.png" alt="Mail de contacto">
-                        <label>museedulouvre@gmail.com</label>
+                        <label>museedulouvre @gmail.com</label>
                     </div>
                 </div>
+            </div>
         </div>
     </footer>
 

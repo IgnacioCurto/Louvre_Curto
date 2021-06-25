@@ -14,6 +14,7 @@
     .header__logo{
         margin-left: 2%;
     }
+/*------INDEX------*/
     .index-col {
         display: block;
         position: relative;
@@ -38,11 +39,13 @@
     .index .col img{
         display: none;
     }
-    /*
-    .footer__col2{
-        align-items: center;
-    }*/
-
+/*------Footer------*/
+    .footer__col3{
+        display: none;
+    }
+    .vl{
+        display: none;
+    }
 }
     /*----------------------Pantallas pequeñas a medianas-----------*/
 @media (max-width: 768px) {
@@ -106,6 +109,18 @@
     .index .col img{
         display: none;
     }
+/*------Shop------*/
+    .shop{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 35px;
+    }
+    .shop p{
+        margin-bottom: 4px;
+    }
+    .shop__inc{
+        font-size: 20px;
+    }
 /*------Footer------*/
     .footer{
         justify-content: space-between;
@@ -130,11 +145,12 @@
         font-size: 15px;
     }
     .footer__col3{
+        display: block;
         max-width: 200px;
         margin-left: 10px;
     }
     .vl{
-        margin-top: 8%;
+        display: none;
     }
 
 

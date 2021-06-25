@@ -1,8 +1,8 @@
 @import 'color';
 @import 'font';
 
-//=======================================INDEX=======================================//
-
+/*=======================================INDEX=======================================*/
+/*--Landing--*/
 .index__landing{
     width: 100%;
     height: 70%;
@@ -32,6 +32,7 @@
     color: $color-white;
     }
 
+/*--Texto e imagen principal--*/
 .index-col{
     margin-top: 40px;
     margin-bottom: 40px;
@@ -47,6 +48,11 @@
     width: 100%;
     border-radius: 15px;}
 
+.carousel{
+    box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
+}
+
+/*--Texto secundario--*/
 .par{
     font-family: $secondary-font-family;
     font-weight: lighter;
@@ -60,10 +66,11 @@
     text-decoration: none;
     color: $color-lightBrown;
 }
-.carousel{
-    box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
-}
 
+/*--Previews/links a otras secciones--*/
+.index__card--container{
+    margin-bottom: 3%;
+}
 .index__card{
     margin-top: 10px;
     background: rgba( 255, 255, 255, 0.05 );
@@ -78,7 +85,6 @@
     transform: scale(1.05);
     background: #ccac7e86;
 }
-
 
 .index__card img{
     border-top-left-radius:10px;
