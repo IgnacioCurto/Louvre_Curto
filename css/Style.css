@@ -1102,6 +1102,116 @@ footer {
     font-size: 23px; }
   .index__card {
     margin-left: 15px; }
+  /*------Browse------*/
+  .browse__content {
+    max-width: 100%;
+    margin-left: 2rem; }
+  .browse__content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    letter-spacing: normal;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 100%;
+    font-size: 300%; }
+  .gallery {
+    row-gap: 1px; }
+  .gallery__Gioconda {
+    grid-column: 1 / 5;
+    grid-row: 1 / 8;
+    filter: grayscale(0); }
+  .gallery__Bodas {
+    grid-column: 5 / 9;
+    grid-row: 1 / 4;
+    filter: grayscale(0); }
+  .gallery__Balsa {
+    grid-column: 5 / 9;
+    grid-row: 4 / 8;
+    filter: grayscale(0); }
+  .gallery__Libertad {
+    grid-column: 1 / 5;
+    grid-row: 8 / 10;
+    filter: grayscale(0); }
+  .gallery__Belle {
+    grid-column: 1 / 5;
+    grid-row: 10 / 12;
+    filter: grayscale(0); }
+  .gallery__Escriba {
+    grid-column: 5 / 9;
+    grid-row: 8 / 12;
+    filter: grayscale(0); }
+  .gallery__Venus {
+    grid-column: 1 / 5;
+    grid-row: 12 / 15;
+    filter: grayscale(0); }
+  .gallery__Juramento {
+    grid-column: 5 / 9;
+    grid-row: 13 / 15;
+    filter: grayscale(0); }
+  .gallery__Psique {
+    grid-column: 5 / 9;
+    grid-row: 12 / 13;
+    filter: grayscale(0); }
+  .gallery__Encajera {
+    grid-column: 1 / 4;
+    grid-row: 15 / 19;
+    filter: grayscale(0); }
+  .gallery__Virgen {
+    grid-column: 4 / 9;
+    grid-row: 15 / 17;
+    filter: grayscale(0); }
+  .gallery__Batallas {
+    grid-column: 4 / 9;
+    grid-row: 17 / 19;
+    filter: grayscale(0); }
+  .gallery__Minerva {
+    grid-column: 1 / 9;
+    grid-row: 19 / 20;
+    filter: grayscale(0); }
+  .gallery__David {
+    grid-column: 1 / 9;
+    grid-row: 20 / 22;
+    filter: grayscale(0); }
+  .gallery__Concierto {
+    grid-column: 1 / 5;
+    grid-row: 22 / 25;
+    filter: grayscale(0); }
+  .gallery__Dante {
+    grid-column: 5 / 9;
+    grid-row: 22 / 25;
+    filter: grayscale(0); }
+  .gallery__Marcellus {
+    grid-column: 1 / 4;
+    grid-row: 25 / 29;
+    filter: grayscale(0); }
+  .gallery__Spartacus {
+    grid-column: 4 / 9;
+    grid-row: 25 / 29;
+    filter: grayscale(0); }
+  .gallery__Akhenaton {
+    grid-column: 1 / 4;
+    grid-row: 29 / 34;
+    filter: grayscale(0); }
+  .gallery__Horus {
+    grid-column: 4 / 9;
+    grid-row: 29 / 32;
+    filter: grayscale(0); }
+  .gallery__Sarcofagos {
+    grid-column: 4 / 9;
+    grid-row: 32 / 34;
+    filter: grayscale(0); }
+  .gallery__Mummy {
+    grid-column: 1 / 9;
+    grid-row: 34 / 36;
+    filter: grayscale(0); }
+  .gallery__Taureau {
+    grid-column: 1 / 4;
+    grid-row: 36 / 39;
+    filter: grayscale(0); }
+  .gallery__Esfinge {
+    grid-column: 4 / 9;
+    grid-row: 36 / 39;
+    filter: grayscale(0); }
   /*------SHOP------*/
   .shop__content {
     max-width: 100%;
